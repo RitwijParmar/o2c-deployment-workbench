@@ -1,0 +1,186 @@
+implementation:
+  customer_name: "Northstar Industrial Distribution (Synthetic)"
+  implementation_id: "O2C-NID-001"
+  as_of_date: "2026-07-31"
+  benchmark_period_days: 90
+  reporting_currency: "USD"
+  source_disclaimer: "All SAP S/4HANA-style, Oracle Fusion-style, and NetSuite-style files are synthetic exports created for this implementation simulation."
+  benchmark_disclaimer: "KPI changes are controlled implementation benchmark results on synthetic data and are not real customer outcomes."
+
+fx_to_usd:
+  USD: 1.0
+  EUR: 1.1
+  GBP: 1.28
+  CAD: 0.74
+
+matching:
+  amount_tolerance_absolute_usd: 2.0
+  amount_tolerance_percent: 0.0025
+  date_window_days: 14
+  min_partial_payment_ratio: 0.25
+  allow_cross_currency: true
+  allow_customer_amount_inference: true
+  overpayment_auto_apply: true
+  deduction_auto_clear_limit_usd: 500.0
+
+collection_priority_weights:
+  days_past_due: 0.35
+  open_balance: 0.30
+  broken_promise: 0.20
+  customer_risk: 0.10
+  active_deduction: 0.05
+
+exception_routing:
+  DUPLICATE_PAYMENT: "Cash Application Data Steward"
+  UNMATCHED_CASH: "Cash Application Analyst"
+  HIGH_VALUE_UNMATCHED: "Senior Cash Application Analyst"
+  CURRENCY_EXCEPTION: "Treasury Operations"
+  DEDUCTION_REVIEW: "Deductions Analyst"
+  INVALID_MASTER_DATA: "ERP Data Steward"
+  BROKEN_PROMISE: "Collections Team Lead"
+  OVERPAYMENT_RESIDUAL: "Customer Credit Analyst"
+
+validation_checks:
+  - id: "VAL-001"
+    name: "Required identifiers populated"
+    severity: "ERROR"
+    enabled: true
+  - id: "VAL-002"
+    name: "Primary identifiers unique within source"
+    severity: "ERROR"
+    enabled: true
+  - id: "VAL-003"
+    name: "Customer foreign keys resolve"
+    severity: "ERROR"
+    enabled: true
+  - id: "VAL-004"
+    name: "Amounts are non-negative"
+    severity: "ERROR"
+    enabled: true
+  - id: "VAL-005"
+    name: "Currency is configured"
+    severity: "ERROR"
+    enabled: true
+  - id: "VAL-006"
+    name: "Invoice due date is not before invoice date"
+    severity: "ERROR"
+    enabled: true
+  - id: "VAL-007"
+    name: "Duplicate bank transactions identified"
+    severity: "WARN"
+    enabled: true
+
+kpi_targets:
+  auto_match_rate: 0.78
+  manual_review_rate: 0.22
+  unapplied_cash_usd: 125000
+  dso_days: 48
+  cei_percent: 82
+  past_due_percent: 0.30
+  processing_time_hours: 25
+
+processing_assumptions:
+  baseline_auto_minutes_per_payment: 0.50
+  baseline_manual_minutes_per_payment: 8.00
+  future_auto_minutes_per_payment: 0.25
+  future_manual_minutes_per_payment: 5.50
+
+agentic_control:
+  offline_case_limit: 24
+  high_value_approval_usd: 10000
+  allowed_autonomous_actions:
+    - "READ_EVIDENCE"
+    - "CLASSIFY_EXCEPTION"
+    - "RECOMMEND_ROUTE"
+    - "DRAFT_COLLECTION_ACTION"
+  human_approval_required:
+    - "POST_TO_ERP"
+    - "WRITE_OFF"
+    - "REFUND"
+    - "CHANGE_CUSTOMER_MASTER"
+
+observability:
+  service_name: "o2c-deployment-workbench"
+  workflow_name: "receivables-implementation-benchmark"
+  capture_record_content: false
+  trace_file: "output/telemetry/traces.jsonl"
+  semantic_convention_note: "Uses OpenTelemetry GenAI-aligned operation, agent, workflow, tool, and usage attribute names."
+
+sources:
+  SAP_S4HANA_SIM:
+    label: "SAP S/4HANA-style simulated export"
+    delimiter: ";"
+    entities:
+      customers:
+        file: "KNA1_SIM.csv"
+        fields: {customer_id: KUNNR, customer_name: NAME1, country: LAND1, credit_risk: RISK_CLASS, payment_terms_days: ZTERM_DAYS}
+      invoices:
+        file: "BSID_SIM.csv"
+        fields: {invoice_id: BELNR, customer_id: KUNNR, invoice_number: XBLNR, invoice_date: BLDAT, due_date: FAEDT, currency: WAERS, gross_amount: WRBTR, open_amount: DMBTR_OPEN, status: AUGST, benchmark_case: TEST_SCENARIO}
+      payments:
+        file: "FEBEP_SIM.csv"
+        fields: {payment_id: KUKEY, customer_id: KUNNR, payment_date: VALUT, currency: WAERS, amount: KWBTR, reference: KIDNO, bank_txn_id: BANK_REF, benchmark_case: TEST_SCENARIO}
+      remittances:
+        file: "REMADV_SIM.csv"
+        fields: {remittance_id: REMADV_ID, payment_id: KUKEY, invoice_refs: XBLNR_LIST, stated_amount: WRBTR}
+      deductions:
+        file: "DM_CASE_SIM.csv"
+        fields: {deduction_id: CASE_GUID, customer_id: KUNNR, invoice_id: BELNR, payment_id: KUKEY, reason_code: REASON, amount: CLAIM_AMOUNT, status: CASE_STATUS}
+      promises_to_pay:
+        file: "PTP_SIM.csv"
+        fields: {promise_id: PTP_GUID, customer_id: KUNNR, invoice_id: BELNR, promise_date: PTP_DATE, promised_amount: PTP_AMOUNT, status: PTP_STATUS}
+      collection_activities:
+        file: "DUNNING_LOG_SIM.csv"
+        fields: {activity_id: ACT_GUID, customer_id: KUNNR, invoice_id: BELNR, activity_date: ACT_DATE, activity_type: ACT_TYPE, outcome: ACT_OUTCOME}
+
+  ORACLE_FUSION_SIM:
+    label: "Oracle Fusion-style simulated export"
+    delimiter: "|"
+    entities:
+      customers:
+        file: "HZ_CUST_ACCOUNTS_SIM.csv"
+        fields: {customer_id: CUST_ACCOUNT_ID, customer_name: ACCOUNT_NAME, country: COUNTRY_CODE, credit_risk: CREDIT_CLASS_CODE, payment_terms_days: TERM_DAYS}
+      invoices:
+        file: "RA_CUSTOMER_TRX_ALL_SIM.csv"
+        fields: {invoice_id: CUSTOMER_TRX_ID, customer_id: BILL_TO_CUSTOMER_ID, invoice_number: TRX_NUMBER, invoice_date: TRX_DATE, due_date: DUE_DATE, currency: INVOICE_CURRENCY_CODE, gross_amount: ORIGINAL_AMOUNT, open_amount: AMOUNT_DUE_REMAINING, status: TRX_STATUS, benchmark_case: TEST_SCENARIO}
+      payments:
+        file: "AR_CASH_RECEIPTS_ALL_SIM.csv"
+        fields: {payment_id: CASH_RECEIPT_ID, customer_id: PAY_FROM_CUSTOMER, payment_date: RECEIPT_DATE, currency: CURRENCY_CODE, amount: AMOUNT, reference: RECEIPT_NUMBER, bank_txn_id: BANK_REFERENCE, benchmark_case: TEST_SCENARIO}
+      remittances:
+        file: "AR_RECEIVABLE_APPLICATIONS_SIM.csv"
+        fields: {remittance_id: RECEIVABLE_APPLICATION_ID, payment_id: CASH_RECEIPT_ID, invoice_refs: APPLIED_TRX_NUMBERS, stated_amount: AMOUNT_APPLIED}
+      deductions:
+        file: "AR_DEDUCTIONS_SIM.csv"
+        fields: {deduction_id: DEDUCTION_ID, customer_id: CUSTOMER_ID, invoice_id: CUSTOMER_TRX_ID, payment_id: CASH_RECEIPT_ID, reason_code: REASON_CODE, amount: DEDUCTION_AMOUNT, status: DEDUCTION_STATUS}
+      promises_to_pay:
+        file: "AR_PROMISES_SIM.csv"
+        fields: {promise_id: PROMISE_ID, customer_id: CUSTOMER_ID, invoice_id: CUSTOMER_TRX_ID, promise_date: PROMISE_DATE, promised_amount: PROMISE_AMOUNT, status: PROMISE_STATUS}
+      collection_activities:
+        file: "AR_COLLECTION_ACTIVITIES_SIM.csv"
+        fields: {activity_id: ACTIVITY_ID, customer_id: CUSTOMER_ID, invoice_id: CUSTOMER_TRX_ID, activity_date: ACTIVITY_DATE, activity_type: ACTIVITY_TYPE, outcome: OUTCOME_CODE}
+
+  NETSUITE_SIM:
+    label: "NetSuite-style simulated export"
+    delimiter: ","
+    entities:
+      customers:
+        file: "customers_export_sim.csv"
+        fields: {customer_id: internalid, customer_name: entityid, country: billcountry, credit_risk: custentity_credit_risk, payment_terms_days: terms_days}
+      invoices:
+        file: "transactions_invoices_sim.csv"
+        fields: {invoice_id: internalid, customer_id: entity_internalid, invoice_number: tranid, invoice_date: trandate, due_date: duedate, currency: currency, gross_amount: foreigntotal, open_amount: amountremaining, status: statusref, benchmark_case: testscenario}
+      payments:
+        file: "customer_payments_sim.csv"
+        fields: {payment_id: internalid, customer_id: customer_internalid, payment_date: trandate, currency: currency, amount: paymentamount, reference: memo, bank_txn_id: custbody_bank_reference, benchmark_case: testscenario}
+      remittances:
+        file: "payment_applications_sim.csv"
+        fields: {remittance_id: applicationid, payment_id: payment_internalid, invoice_refs: applied_tranids, stated_amount: appliedamount}
+      deductions:
+        file: "credit_memos_deductions_sim.csv"
+        fields: {deduction_id: internalid, customer_id: entity_internalid, invoice_id: applied_invoice_internalid, payment_id: payment_internalid, reason_code: reasoncode, amount: amount, status: approvalstatus}
+      promises_to_pay:
+        file: "promises_to_pay_sim.csv"
+        fields: {promise_id: internalid, customer_id: entity_internalid, invoice_id: invoice_internalid, promise_date: promisedate, promised_amount: promiseamount, status: promisestatus}
+      collection_activities:
+        file: "collection_notes_sim.csv"
+        fields: {activity_id: internalid, customer_id: entity_internalid, invoice_id: invoice_internalid, activity_date: activitydate, activity_type: activitytype, outcome: outcome}
