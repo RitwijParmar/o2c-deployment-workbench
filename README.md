@@ -1,5 +1,8 @@
 # O2C Deployment Workbench
 
+[![CI](https://github.com/RitwijParmar/o2c-deployment-workbench/actions/workflows/ci.yml/badge.svg)](https://github.com/RitwijParmar/o2c-deployment-workbench/actions/workflows/ci.yml)
+[![Live implementation showcase](https://img.shields.io/badge/live-implementation_showcase-1f9d8a)](https://o2c-deployment-workbench.ritwij.chatgpt.site)
+
 A complete, clearly synthetic customer implementation for ERP receivables: source onboarding, canonical data, cash application, deductions, collections, controls, KPI benchmarking, MCP access, multi-agent exception review, observability, UAT, cutover, and hypercare.
 
 > All SAP S/4HANA-style, Oracle Fusion-style, and NetSuite-style files in this repository are generated simulations. They are not genuine exports or live integrations. KPI movement is a controlled implementation benchmark on synthetic data, not customer impact.
@@ -34,6 +37,8 @@ flowchart LR
 ```
 
 ## Run it
+
+Explore the [hosted implementation showcase](https://o2c-deployment-workbench.ritwij.chatgpt.site), including benchmark evidence, architecture, agent-control boundaries, observability, and downloadable implementation artifacts.
 
 ```bash
 python -m venv .venv
@@ -102,4 +107,3 @@ pytest -q
 ```
 
 See [research basis](docs/research_basis.md) for the primary sources that informed the payment cases, MCP transport choice, agent handoffs, and telemetry conventions.
-
