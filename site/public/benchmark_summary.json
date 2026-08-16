@@ -1,0 +1,200 @@
+{
+  "implementation": {
+    "customer_name": "Northstar Industrial Distribution (Synthetic)",
+    "implementation_id": "O2C-NID-001",
+    "as_of_date": "2026-07-31",
+    "benchmark_period_days": 90,
+    "reporting_currency": "USD",
+    "source_disclaimer": "All SAP S/4HANA-style, Oracle Fusion-style, and NetSuite-style files are synthetic exports created for this implementation simulation.",
+    "benchmark_disclaimer": "KPI changes are controlled implementation benchmark results on synthetic data and are not real customer outcomes."
+  },
+  "generated_counts": {
+    "SAP_S4HANA_SIM.customers": 18,
+    "SAP_S4HANA_SIM.invoices": 216,
+    "SAP_S4HANA_SIM.payments": 186,
+    "SAP_S4HANA_SIM.remittances": 144,
+    "SAP_S4HANA_SIM.deductions": 18,
+    "SAP_S4HANA_SIM.promises_to_pay": 18,
+    "SAP_S4HANA_SIM.collection_activities": 36,
+    "ORACLE_FUSION_SIM.customers": 18,
+    "ORACLE_FUSION_SIM.invoices": 216,
+    "ORACLE_FUSION_SIM.payments": 186,
+    "ORACLE_FUSION_SIM.remittances": 144,
+    "ORACLE_FUSION_SIM.deductions": 18,
+    "ORACLE_FUSION_SIM.promises_to_pay": 18,
+    "ORACLE_FUSION_SIM.collection_activities": 36,
+    "NETSUITE_SIM.customers": 18,
+    "NETSUITE_SIM.invoices": 216,
+    "NETSUITE_SIM.payments": 186,
+    "NETSUITE_SIM.remittances": 144,
+    "NETSUITE_SIM.deductions": 18,
+    "NETSUITE_SIM.promises_to_pay": 18,
+    "NETSUITE_SIM.collection_activities": 36
+  },
+  "canonical_counts": {
+    "customers": 54,
+    "invoices": 648,
+    "payments": 558,
+    "remittances": 432,
+    "deductions": 54,
+    "promises_to_pay": 54,
+    "collection_activities": 108
+  },
+  "data_quality": {
+    "status": "PASS",
+    "total_records": 1908,
+    "error_count": 0,
+    "warning_count": 18,
+    "quality_rate": 1.0
+  },
+  "baseline_kpis": {
+    "payment_records": 558,
+    "valid_cash_records": 540,
+    "auto_match_rate": 0.1,
+    "manual_review_rate": 0.9032258064516129,
+    "unapplied_cash_usd": 2192667.31,
+    "ending_ar_usd": 2961501.38,
+    "dso_days": 115.9,
+    "cei_percent": 8.7,
+    "past_due_percent": 0.6949582377030668,
+    "processing_time_hours": 67.7
+  },
+  "future_kpis": {
+    "payment_records": 558,
+    "valid_cash_records": 540,
+    "auto_match_rate": 0.8074074074074075,
+    "manual_review_rate": 0.21863799283154123,
+    "unapplied_cash_usd": 550208.69,
+    "ending_ar_usd": 1319042.76,
+    "dso_days": 51.6,
+    "cei_percent": 75.7,
+    "past_due_percent": 0.4485933192946679,
+    "processing_time_hours": 13.0
+  },
+  "kpi_comparison": [
+    {
+      "metric": "auto_match_rate",
+      "label": "Auto-match rate",
+      "unit": "percent",
+      "direction": "higher",
+      "baseline": 0.1,
+      "future": 0.8074074074074075,
+      "change": 0.7074074074074075,
+      "target": 0.78,
+      "target_met": true
+    },
+    {
+      "metric": "manual_review_rate",
+      "label": "Manual-review rate",
+      "unit": "percent",
+      "direction": "lower",
+      "baseline": 0.9032258064516129,
+      "future": 0.21863799283154123,
+      "change": -0.6845878136200716,
+      "target": 0.22,
+      "target_met": true
+    },
+    {
+      "metric": "unapplied_cash_usd",
+      "label": "Unapplied cash",
+      "unit": "currency",
+      "direction": "lower",
+      "baseline": 2192667.31,
+      "future": 550208.69,
+      "change": -1642458.62,
+      "target": 125000,
+      "target_met": false
+    },
+    {
+      "metric": "dso_days",
+      "label": "DSO",
+      "unit": "days",
+      "direction": "lower",
+      "baseline": 115.9,
+      "future": 51.6,
+      "change": -64.30000000000001,
+      "target": 48,
+      "target_met": false
+    },
+    {
+      "metric": "cei_percent",
+      "label": "CEI",
+      "unit": "percent_points",
+      "direction": "higher",
+      "baseline": 8.7,
+      "future": 75.7,
+      "change": 67.0,
+      "target": 82,
+      "target_met": false
+    },
+    {
+      "metric": "past_due_percent",
+      "label": "Past-due AR",
+      "unit": "percent",
+      "direction": "lower",
+      "baseline": 0.6949582377030668,
+      "future": 0.4485933192946679,
+      "change": -0.24636491840839886,
+      "target": 0.3,
+      "target_met": false
+    },
+    {
+      "metric": "processing_time_hours",
+      "label": "Processing time",
+      "unit": "hours",
+      "direction": "lower",
+      "baseline": 67.7,
+      "future": 13.0,
+      "change": -54.7,
+      "target": 25,
+      "target_met": true
+    }
+  ],
+  "match_method_distribution": {
+    "UNMATCHED": 104,
+    "DEDUCTION_SUPPORTED_SHORT_PAY": 54,
+    "PARTIAL_REFERENCE": 106,
+    "ONE_TO_MANY_REMITTANCE": 53,
+    "OVERPAYMENT_APPLY": 113,
+    "REFERENCE": 106,
+    "AMOUNT_INFERENCE": 4,
+    "DUPLICATE_DETECTED": 18
+  },
+  "exception_count": 235,
+  "collection_worklist_count": 324,
+  "disclaimers": [
+    "All SAP S/4HANA-style, Oracle Fusion-style, and NetSuite-style files are synthetic exports created for this implementation simulation.",
+    "KPI changes are controlled implementation benchmark results on synthetic data and are not real customer outcomes."
+  ],
+  "agentic_control": {
+    "mode": "offline_deterministic",
+    "decision_count": 24,
+    "collection_brief": {
+      "critical_accounts": 0,
+      "broken_promises": 54,
+      "highest_priority_action": "Call broken-promise accounts first, then work descending configured score."
+    },
+    "go_live": {
+      "recommendation": "CONDITIONAL_GO",
+      "unmet_targets": [
+        "Unapplied cash",
+        "DSO",
+        "CEI",
+        "Past-due AR"
+      ],
+      "conditions": [
+        "Retain human approval for all ERP posting, write-off, refund, and master-data actions.",
+        "Operate a hypercare queue for unapplied cash and residual overpayments."
+      ]
+    }
+  },
+  "observability": {
+    "span_count": 80,
+    "error_span_count": 0,
+    "agent_span_count": 50,
+    "mean_duration_ms": 0.311,
+    "p95_duration_ms": 1.111,
+    "trace_file": "/Users/ritwij/Documents/ChatGPT/new project/o2c-deployment-workbench/output/telemetry/traces.jsonl",
+    "content_capture_enabled": false
+  }
+}
