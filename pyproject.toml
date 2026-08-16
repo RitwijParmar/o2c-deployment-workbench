@@ -1,0 +1,32 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "o2c-deployment-workbench"
+version = "1.0.0"
+description = "Synthetic ERP receivables implementation simulator with configurable cash application, collections, controls, and implementation deliverables."
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+  "mcp>=2.0,<3",
+  "opentelemetry-sdk>=1.44,<2",
+  "PyYAML>=6.0",
+  "streamlit>=1.38",
+]
+
+[project.optional-dependencies]
+dev = ["pytest>=8.0"]
+ai = ["openai-agents>=0.21,<1"]
+
+[project.scripts]
+o2c-workbench = "o2c_workbench.cli:main"
+o2c-mcp = "o2c_workbench.mcp_server:main"
+o2c-agent-review = "o2c_workbench.ai_agents:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+pythonpath = ["src"]
+testpaths = ["tests"]

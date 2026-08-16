@@ -1,0 +1,14 @@
+__pycache__/
+.pytest_cache/
+node_modules/
+node_modules
+.DS_Store
+demo/slides/
+demo/narration.aiff
+demo/narration.txt
+demo/slides.ffconcat
+demo/qa-*.png
+.venv/
+*.pyc
+.DS_Store
+output/runtime/
