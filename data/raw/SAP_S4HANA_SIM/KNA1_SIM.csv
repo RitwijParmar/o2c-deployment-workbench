@@ -1,0 +1,19 @@
+KUNNR,NAME1,LAND1,RISK_CLASS,ZTERM_DAYS
+SAP-C001,Synthetic Customer 1-001,US,LOW,45
+SAP-C002,Synthetic Customer 1-002,CA,MEDIUM,30
+SAP-C003,Synthetic Customer 1-003,US,HIGH,60
+SAP-C004,Synthetic Customer 1-004,US,HIGH,30
+SAP-C005,Synthetic Customer 1-005,US,MEDIUM,30
+SAP-C006,Synthetic Customer 1-006,CA,HIGH,60
+SAP-C007,Synthetic Customer 1-007,US,LOW,60
+SAP-C008,Synthetic Customer 1-008,CA,HIGH,60
+SAP-C009,Synthetic Customer 1-009,GB,MEDIUM,45
+SAP-C010,Synthetic Customer 1-010,CA,MEDIUM,45
+SAP-C011,Synthetic Customer 1-011,CA,MEDIUM,30
+SAP-C012,Synthetic Customer 1-012,US,HIGH,45
+SAP-C013,Synthetic Customer 1-013,US,MEDIUM,45
+SAP-C014,Synthetic Customer 1-014,DE,MEDIUM,30
+SAP-C015,Synthetic Customer 1-015,GB,MEDIUM,60
+SAP-C016,Synthetic Customer 1-016,CA,HIGH,60
+SAP-C017,Synthetic Customer 1-017,US,HIGH,30
+SAP-C018,Synthetic Customer 1-018,GB,MEDIUM,45
