@@ -1,0 +1,19 @@
+internalid,entityid,billcountry,custentity_credit_risk,terms_days
+NET-C001,Synthetic Customer 3-001,CA,MEDIUM,30
+NET-C002,Synthetic Customer 3-002,CA,HIGH,30
+NET-C003,Synthetic Customer 3-003,CA,HIGH,45
+NET-C004,Synthetic Customer 3-004,CA,LOW,30
+NET-C005,Synthetic Customer 3-005,GB,HIGH,60
+NET-C006,Synthetic Customer 3-006,US,HIGH,30
+NET-C007,Synthetic Customer 3-007,DE,MEDIUM,60
+NET-C008,Synthetic Customer 3-008,GB,MEDIUM,30
+NET-C009,Synthetic Customer 3-009,DE,HIGH,30
+NET-C010,Synthetic Customer 3-010,US,MEDIUM,30
+NET-C011,Synthetic Customer 3-011,US,MEDIUM,30
+NET-C012,Synthetic Customer 3-012,CA,LOW,45
+NET-C013,Synthetic Customer 3-013,DE,HIGH,60
+NET-C014,Synthetic Customer 3-014,CA,MEDIUM,60
+NET-C015,Synthetic Customer 3-015,DE,HIGH,60
+NET-C016,Synthetic Customer 3-016,US,MEDIUM,60
+NET-C017,Synthetic Customer 3-017,GB,MEDIUM,30
+NET-C018,Synthetic Customer 3-018,US,LOW,30
