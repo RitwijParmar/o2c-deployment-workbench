@@ -1,0 +1,9 @@
+{
+  "span_count": 80,
+  "error_span_count": 0,
+  "agent_span_count": 50,
+  "mean_duration_ms": 0.311,
+  "p95_duration_ms": 1.111,
+  "trace_file": "/Users/ritwij/Documents/ChatGPT/new project/o2c-deployment-workbench/output/telemetry/traces.jsonl",
+  "content_capture_enabled": false
+}
