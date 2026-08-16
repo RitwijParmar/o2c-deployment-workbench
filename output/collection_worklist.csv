@@ -1,0 +1,325 @@
+invoice_id,invoice_number,customer_id,customer_name,open_balance_usd,days_past_due,broken_promise,active_deduction,credit_risk,priority_score,priority,route_to
+SAP-I017-11,INV-101711,SAP-C017,Synthetic Customer 1-017,7149.94,0,True,False,HIGH,58.8,HIGH,Collections Team Lead
+NET-I015-11,INV-301511,NET-C015,Synthetic Customer 3-015,6866.37,0,True,False,HIGH,57.6,HIGH,Collections Team Lead
+SAP-I016-11,INV-101611,SAP-C016,Synthetic Customer 1-016,6735.28,0,True,False,HIGH,57.1,HIGH,Collections Team Lead
+NET-I017-11,INV-301711,NET-C017,Synthetic Customer 3-017,7088.37,4,True,False,MEDIUM,55.7,HIGH,Collections Team Lead
+SAP-I012-11,INV-101211,SAP-C012,Synthetic Customer 1-012,6189.35,0,True,False,HIGH,54.9,HIGH,Collections Team Lead
+NET-I013-11,INV-301311,NET-C013,Synthetic Customer 3-013,6171.91,0,True,False,HIGH,54.8,HIGH,Collections Team Lead
+SAP-I018-11,INV-101811,SAP-C018,Synthetic Customer 1-018,7127.74,0,True,False,MEDIUM,54.7,HIGH,Collections Team Lead
+ORA-I018-11,INV-201811,ORA-C018,Synthetic Customer 2-018,7020.18,0,True,False,MEDIUM,54.2,HIGH,Collections Team Lead
+ORA-I016-11,INV-201611,ORA-C016,Synthetic Customer 2-016,6943.57,0,True,False,MEDIUM,53.9,HIGH,Collections Team Lead
+SAP-I008-11,INV-100811,SAP-C008,Synthetic Customer 1-008,5820.27,0,True,False,HIGH,53.4,HIGH,Collections Team Lead
+NET-I009-11,INV-300911,NET-C009,Synthetic Customer 3-009,5392.44,5,True,False,HIGH,53.1,HIGH,Collections Team Lead
+NET-I016-11,INV-301611,NET-C016,Synthetic Customer 3-016,6629.47,0,True,False,MEDIUM,52.7,HIGH,Collections Team Lead
+NET-I006-11,INV-300611,NET-C006,Synthetic Customer 3-006,5388.93,3,True,False,HIGH,52.6,HIGH,Collections Team Lead
+SAP-I006-11,INV-100611,SAP-C006,Synthetic Customer 1-006,5597.86,0,True,False,HIGH,52.5,HIGH,Collections Team Lead
+SAP-I014-11,INV-101411,SAP-C014,Synthetic Customer 1-014,6498.24,1,True,False,MEDIUM,52.4,HIGH,Collections Team Lead
+SAP-I011-11,INV-101111,SAP-C011,Synthetic Customer 1-011,6195.52,5,True,False,MEDIUM,52.4,HIGH,Collections Team Lead
+SAP-I004-11,INV-100411,SAP-C004,Synthetic Customer 1-004,5117.67,6,True,False,HIGH,52.3,HIGH,Collections Team Lead
+ORA-I017-11,INV-201711,ORA-C017,Synthetic Customer 2-017,6463.36,0,True,False,MEDIUM,52.0,HIGH,Collections Team Lead
+ORA-I009-11,INV-200911,ORA-C009,Synthetic Customer 2-009,5476.65,0,True,False,HIGH,52.0,HIGH,Collections Team Lead
+NET-I005-11,INV-300511,NET-C005,Synthetic Customer 3-005,5447.81,0,True,False,HIGH,51.9,HIGH,Collections Team Lead
+ORA-I015-11,INV-201511,ORA-C015,Synthetic Customer 2-015,6184.25,3,True,False,MEDIUM,51.8,HIGH,Collections Team Lead
+SAP-I015-11,INV-101511,SAP-C015,Synthetic Customer 1-015,6340.15,0,True,False,MEDIUM,51.5,HIGH,Collections Team Lead
+NET-I014-11,INV-301411,NET-C014,Synthetic Customer 3-014,6334.35,0,True,False,MEDIUM,51.5,HIGH,Collections Team Lead
+NET-I010-11,INV-301011,NET-C010,Synthetic Customer 3-010,5888.48,6,True,False,MEDIUM,51.4,HIGH,Collections Team Lead
+ORA-I012-11,INV-201211,ORA-C012,Synthetic Customer 2-012,6200.16,0,True,False,MEDIUM,50.9,HIGH,Collections Team Lead
+ORA-I011-11,INV-201111,ORA-C011,Synthetic Customer 2-011,6141.72,0,True,False,MEDIUM,50.7,HIGH,Collections Team Lead
+NET-I018-11,INV-301811,NET-C018,Synthetic Customer 3-018,6900.66,3,True,False,LOW,50.6,HIGH,Collections Team Lead
+ORA-I014-11,INV-201411,ORA-C014,Synthetic Customer 2-014,6093.55,0,True,False,MEDIUM,50.5,HIGH,Collections Team Lead
+SAP-I009-11,INV-100911,SAP-C009,Synthetic Customer 1-009,6042.7,0,True,False,MEDIUM,50.3,HIGH,Collections Team Lead
+NET-I003-11,INV-300311,NET-C003,Synthetic Customer 3-003,4954.23,0,True,False,HIGH,49.9,MEDIUM,Collections Team Lead
+NET-I002-11,INV-300211,NET-C002,Synthetic Customer 3-002,4804.22,2,True,False,HIGH,49.9,MEDIUM,Collections Team Lead
+ORA-I013-11,INV-201311,ORA-C013,Synthetic Customer 2-013,5928.73,0,True,False,MEDIUM,49.8,MEDIUM,Collections Team Lead
+NET-I011-11,INV-301111,NET-C011,Synthetic Customer 3-011,5913.26,0,True,False,MEDIUM,49.8,MEDIUM,Collections Team Lead
+SAP-I013-11,INV-101311,SAP-C013,Synthetic Customer 1-013,5902.28,0,True,False,MEDIUM,49.7,MEDIUM,Collections Team Lead
+ORA-I010-11,INV-201011,ORA-C010,Synthetic Customer 2-010,5570.69,3,True,False,MEDIUM,49.3,MEDIUM,Collections Team Lead
+ORA-I006-11,INV-200611,ORA-C006,Synthetic Customer 2-006,5501.3,4,True,False,MEDIUM,49.3,MEDIUM,Collections Team Lead
+SAP-I003-11,INV-100311,SAP-C003,Synthetic Customer 1-003,4808.94,0,True,False,HIGH,49.3,MEDIUM,Collections Team Lead
+NET-I007-11,INV-300711,NET-C007,Synthetic Customer 3-007,5639.7,0,True,False,MEDIUM,48.7,MEDIUM,Collections Team Lead
+ORA-I003-11,INV-200311,ORA-C003,Synthetic Customer 2-003,4653.97,0,True,False,HIGH,48.7,MEDIUM,Collections Team Lead
+SAP-I005-11,INV-100511,SAP-C005,Synthetic Customer 1-005,5178.89,6,True,False,MEDIUM,48.6,MEDIUM,Collections Team Lead
+SAP-I017-07,INV-101707,SAP-C017,Synthetic Customer 1-017,6745.65,38,False,False,HIGH,48.2,MEDIUM,Collections Specialist
+NET-I008-11,INV-300811,NET-C008,Synthetic Customer 3-008,5525.95,0,True,False,MEDIUM,48.2,MEDIUM,Collections Team Lead
+SAP-I010-11,INV-101011,SAP-C010,Synthetic Customer 1-010,5497.77,0,True,False,MEDIUM,48.1,MEDIUM,Collections Team Lead
+ORA-I004-11,INV-200411,ORA-C004,Synthetic Customer 2-004,5139.75,5,True,False,MEDIUM,48.1,MEDIUM,Collections Team Lead
+NET-I012-11,INV-301211,NET-C012,Synthetic Customer 3-012,6389.78,0,True,False,LOW,47.7,MEDIUM,Collections Team Lead
+ORA-I007-11,INV-200711,ORA-C007,Synthetic Customer 2-007,5221.24,0,True,False,MEDIUM,47.0,MEDIUM,Collections Team Lead
+ORA-I002-11,INV-200211,ORA-C002,Synthetic Customer 2-002,5039.76,0,True,False,MEDIUM,46.3,MEDIUM,Collections Team Lead
+ORA-I017-07,INV-201707,ORA-C017,Synthetic Customer 2-017,6874.81,42,False,False,MEDIUM,45.9,MEDIUM,Collections Specialist
+ORA-I001-11,INV-200111,ORA-C001,Synthetic Customer 2-001,4917.8,0,True,False,MEDIUM,45.8,MEDIUM,Collections Team Lead
+SAP-I007-11,INV-100711,SAP-C007,Synthetic Customer 1-007,5728.46,0,True,False,LOW,45.0,MEDIUM,Collections Team Lead
+ORA-I008-11,INV-200811,ORA-C008,Synthetic Customer 2-008,5256.16,6,True,False,LOW,44.9,MEDIUM,Collections Team Lead
+SAP-I002-11,INV-100211,SAP-C002,Synthetic Customer 1-002,4661.09,0,True,False,MEDIUM,44.7,MEDIUM,Collections Team Lead
+NET-I017-07,INV-301707,NET-C017,Synthetic Customer 3-017,6819.42,36,False,False,MEDIUM,43.9,MEDIUM,Collections Specialist
+NET-I009-07,INV-300907,NET-C009,Synthetic Customer 3-009,5463.35,40,False,False,HIGH,43.6,MEDIUM,Collections Specialist
+NET-I004-11,INV-300411,NET-C004,Synthetic Customer 3-004,5086.0,3,True,False,LOW,43.3,MEDIUM,Collections Team Lead
+NET-I001-11,INV-300111,NET-C001,Synthetic Customer 3-001,4299.77,0,True,False,MEDIUM,43.3,MEDIUM,Collections Team Lead
+NET-I018-07,INV-301807,NET-C018,Synthetic Customer 3-018,6982.44,42,False,False,LOW,42.3,MEDIUM,Collections Specialist
+SAP-I017-02,INV-101702,SAP-C017,Synthetic Customer 1-017,2063.12,82,False,False,HIGH,42.2,MEDIUM,Collections Specialist
+ORA-I005-11,INV-200511,ORA-C005,Synthetic Customer 2-005,4984.51,0,True,False,LOW,42.0,MEDIUM,Collections Team Lead
+ORA-I015-07,INV-201507,ORA-C015,Synthetic Customer 2-015,6033.13,39,False,False,MEDIUM,41.6,MEDIUM,Collections Specialist
+NET-I009-02,INV-300902,NET-C009,Synthetic Customer 3-009,1553.1,87,False,False,HIGH,41.6,MEDIUM,Collections Specialist
+SAP-I001-11,INV-100111,SAP-C001,Synthetic Customer 1-001,4824.6,0,True,False,LOW,41.4,MEDIUM,Collections Team Lead
+SAP-I004-07,INV-100407,SAP-C004,Synthetic Customer 1-004,4870.31,40,False,False,HIGH,41.3,MEDIUM,Collections Specialist
+ORA-I010-07,INV-201007,ORA-C010,Synthetic Customer 2-010,5648.32,42,False,False,MEDIUM,41.0,MEDIUM,Collections Specialist
+SAP-I014-07,INV-101407,SAP-C014,Synthetic Customer 1-014,6065.17,36,False,False,MEDIUM,40.9,MEDIUM,Collections Specialist
+NET-I010-07,INV-301007,NET-C010,Synthetic Customer 3-010,5619.42,42,False,False,MEDIUM,40.9,MEDIUM,Collections Specialist
+NET-I011-07,INV-301107,NET-C011,Synthetic Customer 3-011,5451.95,42,False,False,MEDIUM,40.2,MEDIUM,Collections Specialist
+ORA-I009-07,INV-200907,ORA-C009,Synthetic Customer 2-009,5726.01,24,False,False,HIGH,40.0,MEDIUM,Collections Specialist
+SAP-I017-10,INV-101710,SAP-C017,Synthetic Customer 1-017,6763.32,9,False,False,HIGH,39.8,MEDIUM,Collections Specialist
+SAP-I018-07,INV-101807,SAP-C018,Synthetic Customer 1-018,6622.73,24,False,False,MEDIUM,39.6,MEDIUM,Collections Specialist
+NET-I006-02,INV-300602,NET-C006,Synthetic Customer 3-006,1415.1,82,False,False,HIGH,39.6,MEDIUM,Collections Specialist
+NET-I006-07,INV-300607,NET-C006,Synthetic Customer 3-006,4631.91,36,False,False,HIGH,39.1,MEDIUM,Collections Specialist
+ORA-I017-02,INV-201702,ORA-C017,Synthetic Customer 2-017,1986.81,86,False,False,MEDIUM,39.1,MEDIUM,Collections Specialist
+SAP-I012-07,INV-101207,SAP-C012,Synthetic Customer 1-012,5550.6,23,False,False,HIGH,39.0,MEDIUM,Collections Specialist
+SAP-I013-07,INV-101307,SAP-C013,Synthetic Customer 1-013,6287.88,26,False,False,MEDIUM,38.9,MEDIUM,Collections Specialist
+SAP-I011-07,INV-101107,SAP-C011,Synthetic Customer 1-011,5281.49,39,False,False,MEDIUM,38.6,MEDIUM,Collections Specialist
+NET-I017-02,INV-301702,NET-C017,Synthetic Customer 3-017,1848.2,86,False,False,MEDIUM,38.5,MEDIUM,Collections Specialist
+NET-I015-07,INV-301507,NET-C015,Synthetic Customer 3-015,6552.56,7,False,False,HIGH,38.4,MEDIUM,Collections Specialist
+ORA-I006-07,INV-200607,ORA-C006,Synthetic Customer 2-006,5121.35,40,False,False,MEDIUM,38.3,MEDIUM,Collections Specialist
+SAP-I004-02,INV-100402,SAP-C004,Synthetic Customer 1-004,1150.8,81,False,False,HIGH,38.3,MEDIUM,Collections Specialist
+NET-I011-02,INV-301102,NET-C011,Synthetic Customer 3-011,1749.5,86,False,False,MEDIUM,38.1,MEDIUM,Collections Specialist
+NET-I002-02,INV-300202,NET-C002,Synthetic Customer 3-002,1044.82,82,False,False,HIGH,38.1,MEDIUM,Collections Specialist
+SAP-I011-02,INV-101102,SAP-C011,Synthetic Customer 1-011,1648.37,87,False,False,MEDIUM,38.0,MEDIUM,Collections Specialist
+ORA-I015-02,INV-201502,ORA-C015,Synthetic Customer 2-015,1755.41,85,False,False,MEDIUM,37.9,MEDIUM,Collections Specialist
+NET-I008-07,INV-300807,NET-C008,Synthetic Customer 3-008,4993.34,40,False,False,MEDIUM,37.8,MEDIUM,Collections Specialist
+NET-I002-07,INV-300207,NET-C002,Synthetic Customer 3-002,4074.64,39,False,False,HIGH,37.8,MEDIUM,Collections Specialist
+ORA-I017-10,INV-201710,ORA-C017,Synthetic Customer 2-017,6781.54,15,False,False,MEDIUM,37.7,MEDIUM,Collections Specialist
+SAP-I016-12,INV-101612,SAP-C016,Synthetic Customer 1-016,6865.76,0,False,False,HIGH,37.6,MEDIUM,Collections Specialist
+SAP-I016-07,INV-101607,SAP-C016,Synthetic Customer 1-016,6245.83,8,False,False,HIGH,37.5,MEDIUM,Collections Specialist
+SAP-I012-02,INV-101202,SAP-C012,Synthetic Customer 1-012,1624.56,72,False,False,HIGH,37.5,MEDIUM,Collections Specialist
+SAP-I017-12,INV-101712,SAP-C017,Synthetic Customer 1-017,6817.96,0,False,False,HIGH,37.4,MEDIUM,Collections Specialist
+SAP-I014-02,INV-101402,SAP-C014,Synthetic Customer 1-014,1844.38,82,False,False,MEDIUM,37.3,MEDIUM,Collections Specialist
+ORA-I018-07,INV-201807,ORA-C018,Synthetic Customer 2-018,6942.1,11,False,False,MEDIUM,37.1,MEDIUM,Collections Specialist
+ORA-I010-02,INV-201002,ORA-C010,Synthetic Customer 2-010,1578.77,85,False,False,MEDIUM,37.1,MEDIUM,Collections Specialist
+NET-I010-02,INV-301002,NET-C010,Synthetic Customer 3-010,1520.29,85,False,False,MEDIUM,36.9,MEDIUM,Collections Specialist
+NET-I013-07,INV-301307,NET-C013,Synthetic Customer 3-013,5986.35,9,False,False,HIGH,36.7,MEDIUM,Collections Specialist
+SAP-I016-10,INV-101610,SAP-C016,Synthetic Customer 1-016,6616.24,0,False,False,HIGH,36.6,MEDIUM,Collections Specialist
+SAP-I005-02,INV-100502,SAP-C005,Synthetic Customer 1-005,1419.98,85,False,False,MEDIUM,36.5,MEDIUM,Collections Specialist
+NET-I015-12,INV-301512,NET-C015,Synthetic Customer 3-015,6571.13,0,False,False,HIGH,36.4,MEDIUM,Collections Specialist
+NET-I015-10,INV-301510,NET-C015,Synthetic Customer 3-015,6513.24,0,False,False,HIGH,36.2,MEDIUM,Collections Specialist
+ORA-I009-02,INV-200902,ORA-C009,Synthetic Customer 2-009,1619.38,67,False,False,HIGH,36.1,MEDIUM,Collections Specialist
+ORA-I018-12,INV-201812,ORA-C018,Synthetic Customer 2-018,7458.37,0,False,False,MEDIUM,36.0,MEDIUM,Collections Specialist
+NET-I008-02,INV-300802,NET-C008,Synthetic Customer 3-008,1578.0,81,False,False,MEDIUM,36.0,MEDIUM,Collections Specialist
+SAP-I010-07,INV-101007,SAP-C010,Synthetic Customer 1-010,5705.46,23,False,False,MEDIUM,35.7,MEDIUM,Collections Specialist
+ORA-I003-07,INV-200307,ORA-C003,Synthetic Customer 2-003,4783.81,22,False,False,HIGH,35.7,MEDIUM,Collections Specialist
+SAP-I009-07,INV-100907,SAP-C009,Synthetic Customer 1-009,5639.26,23,False,False,MEDIUM,35.4,MEDIUM,Collections Specialist
+NET-I001-02,INV-300102,NET-C001,Synthetic Customer 3-001,1061.57,86,False,False,MEDIUM,35.4,MEDIUM,Collections Specialist
+SAP-I018-12,INV-101812,SAP-C018,Synthetic Customer 1-018,7276.98,0,False,False,MEDIUM,35.3,MEDIUM,Collections Specialist
+NET-I013-12,INV-301312,NET-C013,Synthetic Customer 3-013,6292.22,0,False,False,HIGH,35.3,MEDIUM,Collections Specialist
+NET-I003-02,INV-300302,NET-C003,Synthetic Customer 3-003,1325.02,68,False,False,HIGH,35.2,MEDIUM,Collections Specialist
+SAP-I018-02,INV-101802,SAP-C018,Synthetic Customer 1-018,2076.34,71,False,False,MEDIUM,35.1,MEDIUM,Collections Specialist
+ORA-I015-10,INV-201510,ORA-C015,Synthetic Customer 2-015,6556.6,9,False,False,MEDIUM,35.0,MEDIUM,Collections Specialist
+NET-I018-02,INV-301802,NET-C018,Synthetic Customer 3-018,2123.97,84,False,False,LOW,35.0,MEDIUM,Collections Specialist
+ORA-I017-12,INV-201712,ORA-C017,Synthetic Customer 2-017,7182.97,0,False,False,MEDIUM,34.9,MEDIUM,Collections Specialist
+NET-I009-10,INV-300910,NET-C009,Synthetic Customer 3-009,5541.89,9,False,False,HIGH,34.9,MEDIUM,Collections Specialist
+NET-I017-10,INV-301710,NET-C017,Synthetic Customer 3-017,6492.29,9,False,False,MEDIUM,34.7,MEDIUM,Collections Specialist
+NET-I006-10,INV-300610,NET-C006,Synthetic Customer 3-006,5351.53,11,False,False,HIGH,34.7,MEDIUM,Collections Specialist
+SAP-I002-02,INV-100202,SAP-C002,Synthetic Customer 1-002,1270.87,81,False,False,MEDIUM,34.7,MEDIUM,Collections Specialist
+ORA-I003-02,INV-200302,ORA-C003,Synthetic Customer 2-003,1211.53,68,False,False,HIGH,34.7,MEDIUM,Collections Specialist
+SAP-I012-10,INV-101210,SAP-C012,Synthetic Customer 1-012,6104.5,0,False,False,HIGH,34.6,MEDIUM,Collections Specialist
+ORA-I011-07,INV-201107,ORA-C011,Synthetic Customer 2-011,5367.22,24,False,False,MEDIUM,34.6,MEDIUM,Collections Specialist
+ORA-I006-02,INV-200602,ORA-C006,Synthetic Customer 2-006,1242.27,81,False,False,MEDIUM,34.6,MEDIUM,Collections Specialist
+NET-I014-07,INV-301407,NET-C014,Synthetic Customer 3-014,6351.25,10,False,False,MEDIUM,34.5,MEDIUM,Collections Specialist
+SAP-I008-07,INV-100807,SAP-C008,Synthetic Customer 1-008,5219.27,12,False,False,HIGH,34.5,MEDIUM,Collections Specialist
+SAP-I005-07,INV-100507,SAP-C005,Synthetic Customer 1-005,4402.81,37,False,False,MEDIUM,34.5,MEDIUM,Collections Specialist
+ORA-I004-07,INV-200407,ORA-C004,Synthetic Customer 2-004,4328.18,38,False,False,MEDIUM,34.5,MEDIUM,Collections Specialist
+SAP-I012-12,INV-101212,SAP-C012,Synthetic Customer 1-012,6056.95,0,False,False,HIGH,34.4,MEDIUM,Collections Specialist
+ORA-I004-02,INV-200402,ORA-C004,Synthetic Customer 2-004,1175.73,81,False,False,MEDIUM,34.4,MEDIUM,Collections Specialist
+ORA-I016-12,INV-201612,ORA-C016,Synthetic Customer 2-016,7007.98,0,False,False,MEDIUM,34.2,MEDIUM,Collections Specialist
+SAP-I013-02,INV-101302,SAP-C013,Synthetic Customer 1-013,1853.21,71,False,False,MEDIUM,34.2,MEDIUM,Collections Specialist
+SAP-I014-10,INV-101410,SAP-C014,Synthetic Customer 1-014,6107.76,12,False,False,MEDIUM,34.1,MEDIUM,Collections Specialist
+SAP-I011-10,INV-101110,SAP-C011,Synthetic Customer 1-011,5885.93,15,False,False,MEDIUM,34.1,MEDIUM,Collections Specialist
+NET-I001-07,INV-300107,NET-C001,Synthetic Customer 3-001,4022.36,41,False,False,MEDIUM,34.1,MEDIUM,Collections Specialist
+SAP-I002-07,INV-100207,SAP-C002,Synthetic Customer 1-002,3959.66,41,False,False,MEDIUM,33.9,MEDIUM,Collections Specialist
+ORA-I008-07,INV-200807,ORA-C008,Synthetic Customer 2-008,5140.15,38,False,False,LOW,33.8,MEDIUM,Collections Specialist
+SAP-I004-10,INV-100410,SAP-C004,Synthetic Customer 1-004,4983.61,13,False,False,HIGH,33.8,MEDIUM,Collections Specialist
+SAP-I014-12,INV-101412,SAP-C014,Synthetic Customer 1-014,6874.86,0,False,False,MEDIUM,33.7,MEDIUM,Collections Specialist
+SAP-I015-07,INV-101507,SAP-C015,Synthetic Customer 1-015,6078.73,11,False,False,MEDIUM,33.7,MEDIUM,Collections Specialist
+ORA-I009-12,INV-200912,ORA-C009,Synthetic Customer 2-009,5880.17,0,False,False,HIGH,33.7,MEDIUM,Collections Specialist
+SAP-I009-02,INV-100902,SAP-C009,Synthetic Customer 1-009,1644.0,72,False,False,MEDIUM,33.6,MEDIUM,Collections Specialist
+NET-I013-02,INV-301302,NET-C013,Synthetic Customer 3-013,1709.18,57,False,False,HIGH,33.5,MEDIUM,Collections Specialist
+NET-I017-12,INV-301712,NET-C017,Synthetic Customer 3-017,6816.58,0,False,False,MEDIUM,33.4,MEDIUM,Collections Specialist
+NET-I013-10,INV-301310,NET-C013,Synthetic Customer 3-013,5802.76,0,False,False,HIGH,33.3,MEDIUM,Collections Specialist
+SAP-I016-02,INV-101602,SAP-C016,Synthetic Customer 1-016,1874.65,54,False,False,HIGH,33.3,MEDIUM,Collections Specialist
+NET-I014-12,INV-301412,NET-C014,Synthetic Customer 3-014,6763.37,0,False,False,MEDIUM,33.2,MEDIUM,Collections Specialist
+NET-I016-12,INV-301612,NET-C016,Synthetic Customer 3-016,6749.43,0,False,False,MEDIUM,33.1,MEDIUM,Collections Specialist
+ORA-I013-07,INV-201307,ORA-C013,Synthetic Customer 2-013,6094.79,9,False,False,MEDIUM,33.1,MEDIUM,Collections Specialist
+SAP-I010-02,INV-101002,SAP-C010,Synthetic Customer 1-010,1510.72,72,False,False,MEDIUM,33.1,MEDIUM,Collections Specialist
+ORA-I018-10,INV-201810,ORA-C018,Synthetic Customer 2-018,6722.09,0,False,False,MEDIUM,33.0,MEDIUM,Collections Specialist
+ORA-I016-07,INV-201607,ORA-C016,Synthetic Customer 2-016,6276.79,6,False,False,MEDIUM,33.0,MEDIUM,Collections Specialist
+NET-I016-07,INV-301607,NET-C016,Synthetic Customer 3-016,6205.62,7,False,False,MEDIUM,33.0,MEDIUM,Collections Specialist
+ORA-I014-12,INV-201412,ORA-C014,Synthetic Customer 2-014,6675.46,0,False,False,MEDIUM,32.9,MEDIUM,Collections Specialist
+NET-I011-10,INV-301110,NET-C011,Synthetic Customer 3-011,5783.64,12,False,False,MEDIUM,32.8,MEDIUM,Collections Specialist
+NET-I009-12,INV-300912,NET-C009,Synthetic Customer 3-009,5679.75,0,False,False,HIGH,32.8,MEDIUM,Collections Specialist
+NET-I016-10,INV-301610,NET-C016,Synthetic Customer 3-016,6641.71,0,False,False,MEDIUM,32.7,MEDIUM,Collections Specialist
+NET-I002-10,INV-300210,NET-C002,Synthetic Customer 3-002,4780.76,12,False,False,HIGH,32.7,MEDIUM,Collections Specialist
+SAP-I015-12,INV-101512,SAP-C015,Synthetic Customer 1-015,6610.8,0,False,False,MEDIUM,32.6,MEDIUM,Collections Specialist
+ORA-I009-10,INV-200910,ORA-C009,Synthetic Customer 2-009,5613.65,0,False,False,HIGH,32.6,MEDIUM,Collections Specialist
+NET-I003-07,INV-300307,NET-C003,Synthetic Customer 3-003,4099.01,21,False,False,HIGH,32.6,MEDIUM,Collections Specialist
+NET-I010-10,INV-301010,NET-C010,Synthetic Customer 3-010,5856.8,10,False,False,MEDIUM,32.5,MEDIUM,Collections Specialist
+SAP-I006-07,INV-100607,SAP-C006,Synthetic Customer 1-006,5170.81,6,False,False,HIGH,32.5,MEDIUM,Collections Specialist
+NET-I012-07,INV-301207,NET-C012,Synthetic Customer 3-012,5897.31,23,False,False,LOW,32.4,MEDIUM,Collections Specialist
+SAP-I006-12,INV-100612,SAP-C006,Synthetic Customer 1-006,5557.35,0,False,False,HIGH,32.4,MEDIUM,Collections Specialist
+ORA-I011-02,INV-201102,ORA-C011,Synthetic Customer 2-011,1572.46,69,False,False,MEDIUM,32.4,MEDIUM,Collections Specialist
+SAP-I018-10,INV-101810,SAP-C018,Synthetic Customer 1-018,6545.99,0,False,False,MEDIUM,32.3,MEDIUM,Collections Specialist
+ORA-I008-02,INV-200802,ORA-C008,Synthetic Customer 2-008,1509.19,83,False,False,LOW,32.3,MEDIUM,Collections Specialist
+ORA-I010-10,INV-201010,ORA-C010,Synthetic Customer 2-010,5704.55,11,False,False,MEDIUM,32.2,MEDIUM,Collections Specialist
+NET-I005-12,INV-300512,NET-C005,Synthetic Customer 3-005,5525.65,0,False,False,HIGH,32.2,MEDIUM,Collections Specialist
+SAP-I008-12,INV-100812,SAP-C008,Synthetic Customer 1-008,5511.92,0,False,False,HIGH,32.2,MEDIUM,Collections Specialist
+NET-I018-10,INV-301810,NET-C018,Synthetic Customer 3-018,6809.86,9,False,False,LOW,32.0,MEDIUM,Collections Specialist
+ORA-I012-12,INV-201212,ORA-C012,Synthetic Customer 2-012,6440.51,0,False,False,MEDIUM,31.9,MEDIUM,Collections Specialist
+NET-I015-02,INV-301502,NET-C015,Synthetic Customer 3-015,1756.21,51,False,False,HIGH,31.9,MEDIUM,Collections Specialist
+NET-I014-10,INV-301410,NET-C014,Synthetic Customer 3-014,6425.08,0,False,False,MEDIUM,31.8,MEDIUM,Collections Specialist
+SAP-I008-10,INV-100810,SAP-C008,Synthetic Customer 1-008,5422.52,0,False,False,HIGH,31.8,MEDIUM,Collections Specialist
+NET-I018-12,INV-301812,NET-C018,Synthetic Customer 3-018,7392.49,0,False,False,LOW,31.7,MEDIUM,Collections Specialist
+ORA-I015-12,INV-201512,ORA-C015,Synthetic Customer 2-015,6401.67,0,False,False,MEDIUM,31.7,MEDIUM,Collections Specialist
+SAP-I010-12,INV-101012,SAP-C010,Synthetic Customer 1-010,6363.54,0,False,False,MEDIUM,31.6,MEDIUM,Collections Specialist
+ORA-I013-12,INV-201312,ORA-C013,Synthetic Customer 2-013,6354.89,0,False,False,MEDIUM,31.6,MEDIUM,Collections Specialist
+SAP-I008-02,INV-100802,SAP-C008,Synthetic Customer 1-008,1598.44,52,False,False,HIGH,31.6,MEDIUM,Collections Specialist
+ORA-I012-07,INV-201207,ORA-C012,Synthetic Customer 2-012,5753.83,8,False,False,MEDIUM,31.5,MEDIUM,Collections Specialist
+ORA-I016-10,INV-201610,ORA-C016,Synthetic Customer 2-016,6287.89,0,False,False,MEDIUM,31.3,MEDIUM,Collections Specialist
+SAP-I003-02,INV-100302,SAP-C003,Synthetic Customer 1-003,1245.88,56,False,False,HIGH,31.3,MEDIUM,Collections Specialist
+ORA-I014-10,INV-201410,ORA-C014,Synthetic Customer 2-014,6271.28,0,False,False,MEDIUM,31.2,MEDIUM,Collections Specialist
+SAP-I013-12,INV-101312,SAP-C013,Synthetic Customer 1-013,6260.13,0,False,False,MEDIUM,31.2,MEDIUM,Collections Specialist
+NET-I006-12,INV-300612,NET-C006,Synthetic Customer 3-006,5235.79,0,False,False,HIGH,31.1,MEDIUM,Collections Specialist
+ORA-I014-07,INV-201407,ORA-C014,Synthetic Customer 2-014,5773.93,6,False,False,MEDIUM,31.0,MEDIUM,Collections Specialist
+NET-I008-10,INV-300810,NET-C008,Synthetic Customer 3-008,5275.51,13,False,False,MEDIUM,31.0,MEDIUM,Collections Specialist
+ORA-I013-10,INV-201310,ORA-C013,Synthetic Customer 2-013,6179.25,0,False,False,MEDIUM,30.9,MEDIUM,Collections Specialist
+ORA-I002-07,INV-200207,ORA-C002,Synthetic Customer 2-002,4449.73,24,False,False,MEDIUM,30.9,MEDIUM,Collections Specialist
+NET-I004-02,INV-300402,NET-C004,Synthetic Customer 3-004,1318.29,81,False,False,LOW,30.9,MEDIUM,Collections Specialist
+ORA-I018-02,INV-201802,ORA-C018,Synthetic Customer 2-018,2043.51,57,False,False,MEDIUM,30.8,MEDIUM,Collections Specialist
+ORA-I012-10,INV-201210,ORA-C012,Synthetic Customer 2-012,6136.83,0,False,False,MEDIUM,30.7,MEDIUM,Collections Specialist
+NET-I005-10,INV-300510,NET-C005,Synthetic Customer 3-005,5129.56,0,False,False,HIGH,30.6,MEDIUM,Collections Specialist
+SAP-I006-10,INV-100610,SAP-C006,Synthetic Customer 1-006,5109.46,0,False,False,HIGH,30.6,MEDIUM,Collections Specialist
+NET-I004-07,INV-300407,NET-C004,Synthetic Customer 3-004,4217.38,40,False,False,LOW,30.6,MEDIUM,Collections Specialist
+NET-I005-02,INV-300502,NET-C005,Synthetic Customer 3-005,1280.1,53,False,False,HIGH,30.6,MEDIUM,Collections Specialist
+SAP-I004-12,INV-100412,SAP-C004,Synthetic Customer 1-004,5085.45,0,False,False,HIGH,30.5,MEDIUM,Collections Specialist
+NET-I003-12,INV-300312,NET-C003,Synthetic Customer 3-003,5082.21,0,False,False,HIGH,30.4,MEDIUM,Collections Specialist
+SAP-I003-12,INV-100312,SAP-C003,Synthetic Customer 1-003,5064.2,0,False,False,HIGH,30.4,MEDIUM,Collections Specialist
+SAP-I009-12,INV-100912,SAP-C009,Synthetic Customer 1-009,6022.78,0,False,False,MEDIUM,30.2,MEDIUM,Collections Specialist
+SAP-I015-10,INV-101510,SAP-C015,Synthetic Customer 1-015,6019.24,0,False,False,MEDIUM,30.2,MEDIUM,Collections Specialist
+NET-I008-12,INV-300812,NET-C008,Synthetic Customer 3-008,6013.12,0,False,False,MEDIUM,30.2,MEDIUM,Collections Specialist
+SAP-I006-02,INV-100602,SAP-C006,Synthetic Customer 1-006,1312.26,51,False,False,HIGH,30.2,MEDIUM,Collections Specialist
+ORA-I001-02,INV-200102,ORA-C001,Synthetic Customer 2-001,1080.6,68,False,False,MEDIUM,30.2,MEDIUM,Collections Specialist
+ORA-I002-02,INV-200202,ORA-C002,Synthetic Customer 2-002,1209.83,66,False,False,MEDIUM,30.1,MEDIUM,Collections Specialist
+SAP-I013-10,INV-101310,SAP-C013,Synthetic Customer 1-013,5975.25,0,False,False,MEDIUM,30.0,MEDIUM,Collections Specialist
+ORA-I003-12,INV-200312,ORA-C003,Synthetic Customer 2-003,4977.0,0,False,False,HIGH,30.0,MEDIUM,Collections Specialist
+SAP-I011-12,INV-101112,SAP-C011,Synthetic Customer 1-011,5950.44,0,False,False,MEDIUM,29.9,LOW,Collections Specialist
+ORA-I007-12,INV-200712,ORA-C007,Synthetic Customer 2-007,5915.28,0,False,False,MEDIUM,29.8,LOW,Collections Specialist
+NET-I011-12,INV-301112,NET-C011,Synthetic Customer 3-011,5911.33,0,False,False,MEDIUM,29.8,LOW,Collections Specialist
+NET-I003-10,INV-300310,NET-C003,Synthetic Customer 3-003,4920.72,0,False,False,HIGH,29.8,LOW,Collections Specialist
+SAP-I003-07,INV-100307,SAP-C003,Synthetic Customer 1-003,4262.96,9,False,False,HIGH,29.8,LOW,Collections Specialist
+NET-I016-02,INV-301602,NET-C016,Synthetic Customer 3-016,1935.36,55,False,False,MEDIUM,29.8,LOW,Collections Specialist
+ORA-I016-02,INV-201602,ORA-C016,Synthetic Customer 2-016,1847.63,56,False,False,MEDIUM,29.8,LOW,Collections Specialist
+NET-I012-02,INV-301202,NET-C012,Synthetic Customer 3-012,1693.06,72,False,False,LOW,29.8,LOW,Collections Specialist
+ORA-I011-10,INV-201110,ORA-C011,Synthetic Customer 2-011,5902.0,0,False,False,MEDIUM,29.7,LOW,Collections Specialist
+NET-I007-12,INV-300712,NET-C007,Synthetic Customer 3-007,5898.28,0,False,False,MEDIUM,29.7,LOW,Collections Specialist
+ORA-I011-12,INV-201112,ORA-C011,Synthetic Customer 2-011,5892.08,0,False,False,MEDIUM,29.7,LOW,Collections Specialist
+NET-I005-07,INV-300507,NET-C005,Synthetic Customer 3-005,4386.18,7,False,False,HIGH,29.7,LOW,Collections Specialist
+NET-I010-12,INV-301012,NET-C010,Synthetic Customer 3-010,5836.09,0,False,False,MEDIUM,29.5,LOW,Collections Specialist
+ORA-I006-12,INV-200612,ORA-C006,Synthetic Customer 2-006,5823.12,0,False,False,MEDIUM,29.4,LOW,Collections Specialist
+ORA-I010-12,INV-201012,ORA-C010,Synthetic Customer 2-010,5813.15,0,False,False,MEDIUM,29.4,LOW,Collections Specialist
+SAP-I015-02,INV-101502,SAP-C015,Synthetic Customer 1-015,1830.29,55,False,False,MEDIUM,29.4,LOW,Collections Specialist
+SAP-I010-10,INV-101010,SAP-C010,Synthetic Customer 1-010,5773.97,0,False,False,MEDIUM,29.2,LOW,Collections Specialist
+ORA-I006-10,INV-200610,ORA-C006,Synthetic Customer 2-006,4879.37,12,False,False,MEDIUM,29.1,LOW,Collections Specialist
+SAP-I005-10,INV-100510,SAP-C005,Synthetic Customer 1-005,4643.45,15,False,False,MEDIUM,29.1,LOW,Collections Specialist
+NET-I002-12,INV-300212,NET-C002,Synthetic Customer 3-002,4726.32,0,False,False,HIGH,29.0,LOW,Collections Specialist
+ORA-I001-07,INV-200107,ORA-C001,Synthetic Customer 2-001,3971.5,24,False,False,MEDIUM,29.0,LOW,Collections Specialist
+ORA-I014-02,INV-201402,ORA-C014,Synthetic Customer 2-014,1884.78,53,False,False,MEDIUM,29.0,LOW,Collections Specialist
+NET-I007-07,INV-300707,NET-C007,Synthetic Customer 3-007,4788.29,12,False,False,MEDIUM,28.8,LOW,Collections Specialist
+ORA-I003-10,INV-200310,ORA-C003,Synthetic Customer 2-003,4669.83,0,False,False,HIGH,28.8,LOW,Collections Specialist
+NET-I012-12,INV-301212,NET-C012,Synthetic Customer 3-012,6645.94,0,False,False,LOW,28.7,LOW,Collections Specialist
+SAP-I009-10,INV-100910,SAP-C009,Synthetic Customer 1-009,5635.48,0,False,False,MEDIUM,28.7,LOW,Collections Specialist
+ORA-I007-07,INV-200707,ORA-C007,Synthetic Customer 2-007,4718.53,12,False,False,MEDIUM,28.5,LOW,Collections Specialist
+ORA-I004-12,INV-200412,ORA-C004,Synthetic Customer 2-004,5579.24,0,False,False,MEDIUM,28.4,LOW,Collections Specialist
+ORA-I013-02,INV-201302,ORA-C013,Synthetic Customer 2-013,1872.44,51,False,False,MEDIUM,28.4,LOW,Collections Specialist
+ORA-I012-02,INV-201202,ORA-C012,Synthetic Customer 2-012,1703.86,53,False,False,MEDIUM,28.3,LOW,Collections Specialist
+NET-I014-02,INV-301402,NET-C014,Synthetic Customer 3-014,1724.33,52,False,False,MEDIUM,28.1,LOW,Collections Specialist
+SAP-I003-10,INV-100310,SAP-C003,Synthetic Customer 1-003,4469.84,0,False,False,HIGH,28.0,LOW,Collections Specialist
+SAP-I002-10,INV-100210,SAP-C002,Synthetic Customer 1-002,4346.95,15,False,False,MEDIUM,27.9,LOW,Collections Specialist
+ORA-I005-07,INV-200507,ORA-C005,Synthetic Customer 2-005,4634.63,24,False,False,LOW,27.6,LOW,Collections Specialist
+ORA-I007-02,INV-200702,ORA-C007,Synthetic Customer 2-007,1394.18,54,False,False,MEDIUM,27.4,LOW,Collections Specialist
+ORA-I004-10,INV-200410,ORA-C004,Synthetic Customer 2-004,4580.79,10,False,False,MEDIUM,27.3,LOW,Collections Specialist
+NET-I007-02,INV-300702,NET-C007,Synthetic Customer 3-007,1536.06,52,False,False,MEDIUM,27.3,LOW,Collections Specialist
+ORA-I007-10,INV-200710,ORA-C007,Synthetic Customer 2-007,5214.02,0,False,False,MEDIUM,27.0,LOW,Collections Specialist
+ORA-I002-12,INV-200212,ORA-C002,Synthetic Customer 2-002,5169.42,0,False,False,MEDIUM,26.8,LOW,Collections Specialist
+SAP-I001-02,INV-100102,SAP-C001,Synthetic Customer 1-001,972.3,71,False,False,LOW,26.6,LOW,Collections Specialist
+SAP-I005-12,INV-100512,SAP-C005,Synthetic Customer 1-005,5106.87,0,False,False,MEDIUM,26.5,LOW,Collections Specialist
+SAP-I002-12,INV-100212,SAP-C002,Synthetic Customer 1-002,5050.98,0,False,False,MEDIUM,26.3,LOW,Collections Specialist
+ORA-I005-02,INV-200502,ORA-C005,Synthetic Customer 2-005,1253.78,66,False,False,LOW,26.3,LOW,Collections Specialist
+NET-I001-10,INV-300110,NET-C001,Synthetic Customer 3-001,4151.61,11,False,False,MEDIUM,25.9,LOW,Collections Specialist
+NET-I007-10,INV-300710,NET-C007,Synthetic Customer 3-007,4888.06,0,False,False,MEDIUM,25.7,LOW,Collections Specialist
+ORA-I008-10,INV-200810,ORA-C008,Synthetic Customer 2-008,5192.92,9,False,False,LOW,25.5,LOW,Collections Specialist
+ORA-I008-12,INV-200812,ORA-C008,Synthetic Customer 2-008,5826.96,0,False,False,LOW,25.4,LOW,Collections Specialist
+NET-I001-12,INV-300112,NET-C001,Synthetic Customer 3-001,4817.8,0,False,False,MEDIUM,25.4,LOW,Collections Specialist
+NET-I004-10,INV-300410,NET-C004,Synthetic Customer 3-004,5027.17,10,False,False,LOW,25.1,LOW,Collections Specialist
+ORA-I001-10,INV-200110,ORA-C001,Synthetic Customer 2-001,4731.31,0,False,False,MEDIUM,25.0,LOW,Collections Specialist
+ORA-I005-12,INV-200512,ORA-C005,Synthetic Customer 2-005,5687.71,0,False,False,LOW,24.9,LOW,Collections Specialist
+ORA-I001-12,INV-200112,ORA-C001,Synthetic Customer 2-001,4618.95,0,False,False,MEDIUM,24.6,LOW,Collections Specialist
+SAP-I001-07,INV-100107,SAP-C001,Synthetic Customer 1-001,3775.84,25,False,False,LOW,24.5,LOW,Collections Specialist
+NET-I004-12,INV-300412,NET-C004,Synthetic Customer 3-004,5579.79,0,False,False,LOW,24.4,LOW,Collections Specialist
+NET-I012-10,INV-301210,NET-C012,Synthetic Customer 3-012,5557.55,0,False,False,LOW,24.4,LOW,Collections Specialist
+SAP-I007-12,INV-100712,SAP-C007,Synthetic Customer 1-007,5456.47,0,False,False,LOW,23.9,LOW,Collections Specialist
+SAP-I007-10,INV-100710,SAP-C007,Synthetic Customer 1-007,5454.22,0,False,False,LOW,23.9,LOW,Collections Specialist
+SAP-I007-07,INV-100707,SAP-C007,Synthetic Customer 1-007,5000.81,6,False,False,LOW,23.9,LOW,Collections Specialist
+SAP-I007-02,INV-100702,SAP-C007,Synthetic Customer 1-007,1303.0,57,False,False,LOW,23.9,LOW,Collections Specialist
+ORA-I002-10,INV-200210,ORA-C002,Synthetic Customer 2-002,4403.54,0,False,False,MEDIUM,23.7,LOW,Collections Specialist
+ORA-I005-10,INV-200510,ORA-C005,Synthetic Customer 2-005,5170.4,0,False,False,LOW,22.8,LOW,Collections Specialist
+SAP-I017-09,INV-101709,SAP-C017,Synthetic Customer 1-017,100.0,24,False,True,HIGH,22.4,LOW,Collections Specialist
+SAP-I001-12,INV-100112,SAP-C001,Synthetic Customer 1-001,5000.17,0,False,False,LOW,22.1,LOW,Collections Specialist
+NET-I002-09,INV-300209,NET-C002,Synthetic Customer 3-002,100.0,22,False,True,HIGH,21.8,LOW,Collections Specialist
+NET-I006-09,INV-300609,NET-C006,Synthetic Customer 3-006,100.0,19,False,True,HIGH,20.9,LOW,Collections Specialist
+SAP-I004-09,INV-100409,SAP-C004,Synthetic Customer 1-004,100.0,18,False,True,HIGH,20.7,LOW,Collections Specialist
+NET-I009-09,INV-300909,NET-C009,Synthetic Customer 3-009,100.0,18,False,True,HIGH,20.7,LOW,Collections Specialist
+SAP-I001-10,INV-100110,SAP-C001,Synthetic Customer 1-001,4361.45,0,False,False,LOW,19.5,LOW,Collections Specialist
+SAP-I011-09,INV-101109,SAP-C011,Synthetic Customer 1-011,100.0,24,False,True,MEDIUM,18.4,LOW,Collections Specialist
+SAP-I014-09,INV-101409,SAP-C014,Synthetic Customer 1-014,100.0,23,False,True,MEDIUM,18.1,LOW,Collections Specialist
+NET-I008-09,INV-300809,NET-C008,Synthetic Customer 3-008,100.0,23,False,True,MEDIUM,18.1,LOW,Collections Specialist
+NET-I010-09,INV-301009,NET-C010,Synthetic Customer 3-010,100.0,23,False,True,MEDIUM,18.1,LOW,Collections Specialist
+NET-I011-09,INV-301109,NET-C011,Synthetic Customer 3-011,100.0,23,False,True,MEDIUM,18.1,LOW,Collections Specialist
+NET-I003-09,INV-300309,NET-C003,Synthetic Customer 3-003,100.0,9,False,True,HIGH,18.0,LOW,Collections Specialist
+ORA-I015-09,INV-201509,ORA-C015,Synthetic Customer 2-015,100.0,21,False,True,MEDIUM,17.5,LOW,Collections Specialist
+NET-I001-09,INV-300109,NET-C001,Synthetic Customer 3-001,100.0,21,False,True,MEDIUM,17.5,LOW,Collections Specialist
+SAP-I012-09,INV-101209,SAP-C012,Synthetic Customer 1-012,100.0,7,False,True,HIGH,17.4,LOW,Collections Specialist
+SAP-I002-09,INV-100209,SAP-C002,Synthetic Customer 1-002,100.0,20,False,True,MEDIUM,17.2,LOW,Collections Specialist
+ORA-I004-09,INV-200409,ORA-C004,Synthetic Customer 2-004,100.0,20,False,True,MEDIUM,17.2,LOW,Collections Specialist
+ORA-I017-09,INV-201709,ORA-C017,Synthetic Customer 2-017,100.0,20,False,True,MEDIUM,17.2,LOW,Collections Specialist
+ORA-I003-09,INV-200309,ORA-C003,Synthetic Customer 2-003,100.0,5,False,True,HIGH,16.9,LOW,Collections Specialist
+ORA-I009-09,INV-200909,ORA-C009,Synthetic Customer 2-009,100.0,5,False,True,HIGH,16.9,LOW,Collections Specialist
+NET-I017-09,INV-301709,NET-C017,Synthetic Customer 3-017,100.0,19,False,True,MEDIUM,16.9,LOW,Collections Specialist
+SAP-I005-09,INV-100509,SAP-C005,Synthetic Customer 1-005,100.0,18,False,True,MEDIUM,16.7,LOW,Collections Specialist
+ORA-I006-09,INV-200609,ORA-C006,Synthetic Customer 2-006,100.0,18,False,True,MEDIUM,16.7,LOW,Collections Specialist
+ORA-I010-09,INV-201009,ORA-C010,Synthetic Customer 2-010,100.0,18,False,True,MEDIUM,16.7,LOW,Collections Specialist
+SAP-I003-09,INV-100309,SAP-C003,Synthetic Customer 1-003,100.0,0,False,True,HIGH,15.4,LOW,Collections Specialist
+SAP-I006-09,INV-100609,SAP-C006,Synthetic Customer 1-006,100.0,0,False,True,HIGH,15.4,LOW,Collections Specialist
+SAP-I008-09,INV-100809,SAP-C008,Synthetic Customer 1-008,100.0,0,False,True,HIGH,15.4,LOW,Collections Specialist
+SAP-I016-09,INV-101609,SAP-C016,Synthetic Customer 1-016,100.0,0,False,True,HIGH,15.4,LOW,Collections Specialist
+NET-I005-09,INV-300509,NET-C005,Synthetic Customer 3-005,100.0,0,False,True,HIGH,15.4,LOW,Collections Specialist
+NET-I013-09,INV-301309,NET-C013,Synthetic Customer 3-013,100.0,0,False,True,HIGH,15.4,LOW,Collections Specialist
+NET-I015-09,INV-301509,NET-C015,Synthetic Customer 3-015,100.0,0,False,True,HIGH,15.4,LOW,Collections Specialist
+ORA-I002-09,INV-200209,ORA-C002,Synthetic Customer 2-002,100.0,9,False,True,MEDIUM,14.0,LOW,Collections Specialist
+ORA-I008-09,INV-200809,ORA-C008,Synthetic Customer 2-008,100.0,22,False,True,LOW,13.8,LOW,Collections Specialist
+NET-I004-09,INV-300409,NET-C004,Synthetic Customer 3-004,100.0,22,False,True,LOW,13.8,LOW,Collections Specialist
+SAP-I018-09,INV-101809,SAP-C018,Synthetic Customer 1-018,100.0,7,False,True,MEDIUM,13.4,LOW,Collections Specialist
+ORA-I011-09,INV-201109,ORA-C011,Synthetic Customer 2-011,100.0,7,False,True,MEDIUM,13.4,LOW,Collections Specialist
+ORA-I001-09,INV-200109,ORA-C001,Synthetic Customer 2-001,100.0,5,False,True,MEDIUM,12.9,LOW,Collections Specialist
+NET-I018-09,INV-301809,NET-C018,Synthetic Customer 3-018,100.0,19,False,True,LOW,12.9,LOW,Collections Specialist
+SAP-I009-09,INV-100909,SAP-C009,Synthetic Customer 1-009,100.0,4,False,True,MEDIUM,12.6,LOW,Collections Specialist
+SAP-I010-09,INV-101009,SAP-C010,Synthetic Customer 1-010,100.0,4,False,True,MEDIUM,12.6,LOW,Collections Specialist
+SAP-I013-09,INV-101309,SAP-C013,Synthetic Customer 1-013,100.0,4,False,True,MEDIUM,12.6,LOW,Collections Specialist
+SAP-I015-09,INV-101509,SAP-C015,Synthetic Customer 1-015,100.0,0,False,True,MEDIUM,11.4,LOW,Collections Specialist
+ORA-I007-09,INV-200709,ORA-C007,Synthetic Customer 2-007,100.0,0,False,True,MEDIUM,11.4,LOW,Collections Specialist
+ORA-I012-09,INV-201209,ORA-C012,Synthetic Customer 2-012,100.0,0,False,True,MEDIUM,11.4,LOW,Collections Specialist
+ORA-I013-09,INV-201309,ORA-C013,Synthetic Customer 2-013,100.0,0,False,True,MEDIUM,11.4,LOW,Collections Specialist
+ORA-I014-09,INV-201409,ORA-C014,Synthetic Customer 2-014,100.0,0,False,True,MEDIUM,11.4,LOW,Collections Specialist
+ORA-I016-09,INV-201609,ORA-C016,Synthetic Customer 2-016,100.0,0,False,True,MEDIUM,11.4,LOW,Collections Specialist
+ORA-I018-09,INV-201809,ORA-C018,Synthetic Customer 2-018,100.0,0,False,True,MEDIUM,11.4,LOW,Collections Specialist
+NET-I007-09,INV-300709,NET-C007,Synthetic Customer 3-007,100.0,0,False,True,MEDIUM,11.4,LOW,Collections Specialist
+NET-I014-09,INV-301409,NET-C014,Synthetic Customer 3-014,100.0,0,False,True,MEDIUM,11.4,LOW,Collections Specialist
+NET-I016-09,INV-301609,NET-C016,Synthetic Customer 3-016,100.0,0,False,True,MEDIUM,11.4,LOW,Collections Specialist
+SAP-I001-09,INV-100109,SAP-C001,Synthetic Customer 1-001,100.0,8,False,True,LOW,9.7,LOW,Collections Specialist
+NET-I012-09,INV-301209,NET-C012,Synthetic Customer 3-012,100.0,7,False,True,LOW,9.4,LOW,Collections Specialist
+ORA-I005-09,INV-200509,ORA-C005,Synthetic Customer 2-005,100.0,5,False,True,LOW,8.9,LOW,Collections Specialist
+SAP-I007-09,INV-100709,SAP-C007,Synthetic Customer 1-007,100.0,0,False,True,LOW,7.4,LOW,Collections Specialist

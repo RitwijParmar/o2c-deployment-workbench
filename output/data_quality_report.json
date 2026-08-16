@@ -1,0 +1,153 @@
+{
+  "status": "PASS",
+  "total_records": 1908,
+  "error_count": 0,
+  "warning_count": 18,
+  "quality_rate": 1.0,
+  "issues": [
+    {
+      "check_id": "VAL-007",
+      "severity": "WARN",
+      "entity": "payments",
+      "record_id": "BANK-1-003-01",
+      "field": "bank_txn_id",
+      "message": "Bank transaction appears 2 times"
+    },
+    {
+      "check_id": "VAL-007",
+      "severity": "WARN",
+      "entity": "payments",
+      "record_id": "BANK-1-006-01",
+      "field": "bank_txn_id",
+      "message": "Bank transaction appears 2 times"
+    },
+    {
+      "check_id": "VAL-007",
+      "severity": "WARN",
+      "entity": "payments",
+      "record_id": "BANK-1-009-01",
+      "field": "bank_txn_id",
+      "message": "Bank transaction appears 2 times"
+    },
+    {
+      "check_id": "VAL-007",
+      "severity": "WARN",
+      "entity": "payments",
+      "record_id": "BANK-1-012-01",
+      "field": "bank_txn_id",
+      "message": "Bank transaction appears 2 times"
+    },
+    {
+      "check_id": "VAL-007",
+      "severity": "WARN",
+      "entity": "payments",
+      "record_id": "BANK-1-015-01",
+      "field": "bank_txn_id",
+      "message": "Bank transaction appears 2 times"
+    },
+    {
+      "check_id": "VAL-007",
+      "severity": "WARN",
+      "entity": "payments",
+      "record_id": "BANK-1-018-01",
+      "field": "bank_txn_id",
+      "message": "Bank transaction appears 2 times"
+    },
+    {
+      "check_id": "VAL-007",
+      "severity": "WARN",
+      "entity": "payments",
+      "record_id": "BANK-2-003-01",
+      "field": "bank_txn_id",
+      "message": "Bank transaction appears 2 times"
+    },
+    {
+      "check_id": "VAL-007",
+      "severity": "WARN",
+      "entity": "payments",
+      "record_id": "BANK-2-006-01",
+      "field": "bank_txn_id",
+      "message": "Bank transaction appears 2 times"
+    },
+    {
+      "check_id": "VAL-007",
+      "severity": "WARN",
+      "entity": "payments",
+      "record_id": "BANK-2-009-01",
+      "field": "bank_txn_id",
+      "message": "Bank transaction appears 2 times"
+    },
+    {
+      "check_id": "VAL-007",
+      "severity": "WARN",
+      "entity": "payments",
+      "record_id": "BANK-2-012-01",
+      "field": "bank_txn_id",
+      "message": "Bank transaction appears 2 times"
+    },
+    {
+      "check_id": "VAL-007",
+      "severity": "WARN",
+      "entity": "payments",
+      "record_id": "BANK-2-015-01",
+      "field": "bank_txn_id",
+      "message": "Bank transaction appears 2 times"
+    },
+    {
+      "check_id": "VAL-007",
+      "severity": "WARN",
+      "entity": "payments",
+      "record_id": "BANK-2-018-01",
+      "field": "bank_txn_id",
+      "message": "Bank transaction appears 2 times"
+    },
+    {
+      "check_id": "VAL-007",
+      "severity": "WARN",
+      "entity": "payments",
+      "record_id": "BANK-3-003-01",
+      "field": "bank_txn_id",
+      "message": "Bank transaction appears 2 times"
+    },
+    {
+      "check_id": "VAL-007",
+      "severity": "WARN",
+      "entity": "payments",
+      "record_id": "BANK-3-006-01",
+      "field": "bank_txn_id",
+      "message": "Bank transaction appears 2 times"
+    },
+    {
+      "check_id": "VAL-007",
+      "severity": "WARN",
+      "entity": "payments",
+      "record_id": "BANK-3-009-01",
+      "field": "bank_txn_id",
+      "message": "Bank transaction appears 2 times"
+    },
+    {
+      "check_id": "VAL-007",
+      "severity": "WARN",
+      "entity": "payments",
+      "record_id": "BANK-3-012-01",
+      "field": "bank_txn_id",
+      "message": "Bank transaction appears 2 times"
+    },
+    {
+      "check_id": "VAL-007",
+      "severity": "WARN",
+      "entity": "payments",
+      "record_id": "BANK-3-015-01",
+      "field": "bank_txn_id",
+      "message": "Bank transaction appears 2 times"
+    },
+    {
+      "check_id": "VAL-007",
+      "severity": "WARN",
+      "entity": "payments",
+      "record_id": "BANK-3-018-01",
+      "field": "bank_txn_id",
+      "message": "Bank transaction appears 2 times"
+    }
+  ]
+}
