@@ -1,0 +1,19 @@
+CUST_ACCOUNT_ID,ACCOUNT_NAME,COUNTRY_CODE,CREDIT_CLASS_CODE,TERM_DAYS
+ORA-C001,Synthetic Customer 2-001,US,MEDIUM,45
+ORA-C002,Synthetic Customer 2-002,US,MEDIUM,45
+ORA-C003,Synthetic Customer 2-003,US,HIGH,45
+ORA-C004,Synthetic Customer 2-004,DE,MEDIUM,30
+ORA-C005,Synthetic Customer 2-005,GB,LOW,45
+ORA-C006,Synthetic Customer 2-006,GB,MEDIUM,30
+ORA-C007,Synthetic Customer 2-007,CA,MEDIUM,60
+ORA-C008,Synthetic Customer 2-008,DE,LOW,30
+ORA-C009,Synthetic Customer 2-009,US,HIGH,45
+ORA-C010,Synthetic Customer 2-010,GB,MEDIUM,30
+ORA-C011,Synthetic Customer 2-011,DE,MEDIUM,45
+ORA-C012,Synthetic Customer 2-012,US,MEDIUM,60
+ORA-C013,Synthetic Customer 2-013,US,MEDIUM,60
+ORA-C014,Synthetic Customer 2-014,DE,MEDIUM,60
+ORA-C015,Synthetic Customer 2-015,US,MEDIUM,30
+ORA-C016,Synthetic Customer 2-016,CA,MEDIUM,60
+ORA-C017,Synthetic Customer 2-017,CA,MEDIUM,30
+ORA-C018,Synthetic Customer 2-018,DE,MEDIUM,60
