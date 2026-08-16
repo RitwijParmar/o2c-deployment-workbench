@@ -1,0 +1,218 @@
+<!doctype html>
+<html lang='en'><head><meta charset='utf-8'><meta name='viewport' content='width=device-width,initial-scale=1'>
+<title>O2C Deployment Workbench</title>
+<style>
+:root{--navy:#0b1f33;--blue:#1769aa;--cyan:#30b6c9;--paper:#f4f7fa;--ink:#17212b;--muted:#617181;--green:#177a55;--amber:#b56a00;--red:#a93c3c}
+*{box-sizing:border-box} body{margin:0;background:var(--paper);font-family:Inter,ui-sans-serif,system-ui,-apple-system,sans-serif;color:var(--ink)}
+header{background:linear-gradient(120deg,var(--navy),#123f63);color:white;padding:34px 5vw 28px} header h1{margin:5px 0 8px;font-size:34px;letter-spacing:-.03em} header p{margin:0;color:#c8d8e6;max-width:920px;line-height:1.5} .tag{display:inline-block;background:#1d567e;border:1px solid #4f86ab;padding:5px 10px;border-radius:99px;font-size:12px}
+main{padding:28px 5vw 60px;max-width:1500px;margin:auto} .notice{background:#fff8e6;border-left:5px solid #e2a532;padding:13px 16px;margin-bottom:22px;border-radius:7px;line-height:1.4}
+.grid{display:grid;grid-template-columns:repeat(4,minmax(180px,1fr));gap:14px} .card{background:white;border:1px solid #dce5ec;border-radius:12px;padding:18px;box-shadow:0 4px 16px #0b1f330d} .eyebrow{text-transform:uppercase;letter-spacing:.08em;font-size:11px;color:var(--muted);font-weight:700} .value{font-size:30px;font-weight:750;margin:9px 0 4px;color:var(--navy)} .comparison{font-size:13px;color:var(--muted)} .target{font-size:12px;margin-top:12px;font-weight:700} .good{color:var(--green)} .warn{color:var(--amber)}
+.two{display:grid;grid-template-columns:1fr 1.35fr;gap:18px;margin-top:20px} section{background:white;border:1px solid #dce5ec;border-radius:12px;padding:20px} h2{font-size:18px;margin:0 0 16px} .bar-row{display:grid;grid-template-columns:190px 1fr 35px;gap:10px;align-items:center;font-size:13px;margin:9px 0} .bar-track{height:10px;background:#eaf0f4;border-radius:8px;overflow:hidden} .bar{height:100%;background:linear-gradient(90deg,var(--blue),var(--cyan));border-radius:8px}
+table{width:100%;border-collapse:collapse;font-size:12.5px} th{text-align:left;color:var(--muted);font-size:11px;text-transform:uppercase;letter-spacing:.05em;border-bottom:2px solid #dce5ec;padding:8px} td{border-bottom:1px solid #edf1f4;padding:9px 8px;vertical-align:top} .pill{font-size:10px;font-weight:800;border-radius:99px;padding:4px 7px} .critical{background:#fde7e7;color:#9e2828} .high{background:#fff0d5;color:#8a5200} .medium{background:#e6f0ff;color:#275d9b} .low{background:#e5f7ef;color:#1a6f50} details{margin-top:20px} pre{overflow:auto;background:#0b1f33;color:#d4e6f5;padding:16px;border-radius:8px}
+@media(max-width:1000px){.grid{grid-template-columns:repeat(2,1fr)}.two{grid-template-columns:1fr}} @media(max-width:600px){.grid{grid-template-columns:1fr}}
+</style></head>
+<body><header><span class='tag'>Controlled implementation benchmark</span><h1>O2C Deployment Workbench</h1><p>Northstar Industrial Distribution (Synthetic) · as of 2026-07-31 · ERP receivables integration simulation</p></header>
+<main><div class='notice'><strong>Synthetic-data notice.</strong> All SAP S/4HANA-style, Oracle Fusion-style, and NetSuite-style files are synthetic exports created for this implementation simulation. KPI changes are controlled implementation benchmark results on synthetic data and are not real customer outcomes.</div>
+<div class='grid'><article class='card'><div class='eyebrow'>Auto-match rate</div><div class='value'>80.7%</div><div class='comparison'>Baseline 10.0%</div><div class='target good'>Target met: 78.0%</div></article><article class='card'><div class='eyebrow'>Manual-review rate</div><div class='value'>21.9%</div><div class='comparison'>Baseline 90.3%</div><div class='target good'>Target met: 22.0%</div></article><article class='card'><div class='eyebrow'>Unapplied cash</div><div class='value'>$550,209</div><div class='comparison'>Baseline $2,192,667</div><div class='target warn'>Below target: $125,000</div></article><article class='card'><div class='eyebrow'>DSO</div><div class='value'>51.6 days</div><div class='comparison'>Baseline 115.9 days</div><div class='target warn'>Below target: 48.0 days</div></article><article class='card'><div class='eyebrow'>CEI</div><div class='value'>75.7%</div><div class='comparison'>Baseline 8.7%</div><div class='target warn'>Below target: 82.0%</div></article><article class='card'><div class='eyebrow'>Past-due AR</div><div class='value'>44.9%</div><div class='comparison'>Baseline 69.5%</div><div class='target warn'>Below target: 30.0%</div></article><article class='card'><div class='eyebrow'>Processing time</div><div class='value'>13.0 hrs</div><div class='comparison'>Baseline 67.7 hrs</div><div class='target good'>Target met: 25.0 hrs</div></article></div>
+<div class='two'><section><h2>Future-state match methods</h2><div class='bar-row'><span>Overpayment Apply</span><div class='bar-track'><div class='bar' style='width:100.0%'></div></div><b>113</b></div><div class='bar-row'><span>Partial Reference</span><div class='bar-track'><div class='bar' style='width:93.8%'></div></div><b>106</b></div><div class='bar-row'><span>Reference</span><div class='bar-track'><div class='bar' style='width:93.8%'></div></div><b>106</b></div><div class='bar-row'><span>Unmatched</span><div class='bar-track'><div class='bar' style='width:92.0%'></div></div><b>104</b></div><div class='bar-row'><span>Deduction Supported Short Pay</span><div class='bar-track'><div class='bar' style='width:47.8%'></div></div><b>54</b></div><div class='bar-row'><span>One To Many Remittance</span><div class='bar-track'><div class='bar' style='width:46.9%'></div></div><b>53</b></div><div class='bar-row'><span>Duplicate Detected</span><div class='bar-track'><div class='bar' style='width:15.9%'></div></div><b>18</b></div><div class='bar-row'><span>Amount Inference</span><div class='bar-track'><div class='bar' style='width:3.5%'></div></div><b>4</b></div></section><section><h2>Priority collection worklist</h2><table><thead><tr><th>Customer</th><th>Invoice</th><th>Open</th><th>Days late</th><th>Priority</th><th>Score</th></tr></thead><tbody><tr><td>Synthetic Customer 1-017</td><td>INV-101711</td><td>$7,149.94</td><td>0</td><td><span class='pill high'>HIGH</span></td><td>58.8</td></tr><tr><td>Synthetic Customer 3-015</td><td>INV-301511</td><td>$6,866.37</td><td>0</td><td><span class='pill high'>HIGH</span></td><td>57.6</td></tr><tr><td>Synthetic Customer 1-016</td><td>INV-101611</td><td>$6,735.28</td><td>0</td><td><span class='pill high'>HIGH</span></td><td>57.1</td></tr><tr><td>Synthetic Customer 3-017</td><td>INV-301711</td><td>$7,088.37</td><td>4</td><td><span class='pill high'>HIGH</span></td><td>55.7</td></tr><tr><td>Synthetic Customer 1-012</td><td>INV-101211</td><td>$6,189.35</td><td>0</td><td><span class='pill high'>HIGH</span></td><td>54.9</td></tr><tr><td>Synthetic Customer 3-013</td><td>INV-301311</td><td>$6,171.91</td><td>0</td><td><span class='pill high'>HIGH</span></td><td>54.8</td></tr><tr><td>Synthetic Customer 1-018</td><td>INV-101811</td><td>$7,127.74</td><td>0</td><td><span class='pill high'>HIGH</span></td><td>54.7</td></tr><tr><td>Synthetic Customer 2-018</td><td>INV-201811</td><td>$7,020.18</td><td>0</td><td><span class='pill high'>HIGH</span></td><td>54.2</td></tr><tr><td>Synthetic Customer 2-016</td><td>INV-201611</td><td>$6,943.57</td><td>0</td><td><span class='pill high'>HIGH</span></td><td>53.9</td></tr><tr><td>Synthetic Customer 1-008</td><td>INV-100811</td><td>$5,820.27</td><td>0</td><td><span class='pill high'>HIGH</span></td><td>53.4</td></tr><tr><td>Synthetic Customer 3-009</td><td>INV-300911</td><td>$5,392.44</td><td>5</td><td><span class='pill high'>HIGH</span></td><td>53.1</td></tr><tr><td>Synthetic Customer 3-016</td><td>INV-301611</td><td>$6,629.47</td><td>0</td><td><span class='pill high'>HIGH</span></td><td>52.7</td></tr></tbody></table></section></div>
+<section style='margin-top:20px'><h2>Exception routing queue</h2><table><thead><tr><th>Payment</th><th>Exception</th><th>Amount</th><th>Assigned team</th><th>Reason</th></tr></thead><tbody><tr><td>NET-P001-06</td><td>UNMATCHED_CASH</td><td>$3,656.69</td><td>Cash Application Analyst</td><td>No deterministic match found</td></tr><tr><td>NET-P007-03</td><td>OVERPAYMENT_RESIDUAL</td><td>$3,702.74</td><td>Customer Credit Analyst</td><td>Invoice cleared; residual retained as unapplied customer credit</td></tr><tr><td>NET-P015-06</td><td>UNMATCHED_CASH</td><td>$5,956.87</td><td>Cash Application Analyst</td><td>No deterministic match found</td></tr><tr><td>NET-P016-06</td><td>UNMATCHED_CASH</td><td>$5,641.47</td><td>Cash Application Analyst</td><td>No deterministic match found</td></tr><tr><td>ORA-P001-07</td><td>OVERPAYMENT_RESIDUAL</td><td>$4,038.78</td><td>Customer Credit Analyst</td><td>Invoice cleared; residual retained as unapplied customer credit</td></tr><tr><td>ORA-P001-09</td><td>UNMATCHED_CASH</td><td>$3,926.99</td><td>Cash Application Analyst</td><td>No deterministic match found</td></tr><tr><td>ORA-P006-06</td><td>UNMATCHED_CASH</td><td>$4,655.77</td><td>Cash Application Analyst</td><td>No deterministic match found</td></tr><tr><td>ORA-P017-09</td><td>UNMATCHED_CASH</td><td>$5,628.68</td><td>Cash Application Analyst</td><td>No deterministic match found</td></tr><tr><td>ORA-P018-01-DUP</td><td>DUPLICATE_PAYMENT</td><td>$4,723.20</td><td>Cash Application Data Steward</td><td>Repeated bank transaction identifier</td></tr><tr><td>SAP-P009-07</td><td>OVERPAYMENT_RESIDUAL</td><td>$5,478.61</td><td>Customer Credit Analyst</td><td>Invoice cleared; residual retained as unapplied customer credit</td></tr><tr><td>SAP-P012-06</td><td>UNMATCHED_CASH</td><td>$5,046.00</td><td>Cash Application Analyst</td><td>No deterministic match found</td></tr><tr><td>SAP-P015-01-DUP</td><td>DUPLICATE_PAYMENT</td><td>$4,636.50</td><td>Cash Application Data Steward</td><td>Repeated bank transaction identifier</td></tr></tbody></table></section>
+<details><summary>Benchmark payload</summary><pre>{
+  &quot;implementation&quot;: {
+    &quot;customer_name&quot;: &quot;Northstar Industrial Distribution (Synthetic)&quot;,
+    &quot;implementation_id&quot;: &quot;O2C-NID-001&quot;,
+    &quot;as_of_date&quot;: &quot;2026-07-31&quot;,
+    &quot;benchmark_period_days&quot;: 90,
+    &quot;reporting_currency&quot;: &quot;USD&quot;,
+    &quot;source_disclaimer&quot;: &quot;All SAP S/4HANA-style, Oracle Fusion-style, and NetSuite-style files are synthetic exports created for this implementation simulation.&quot;,
+    &quot;benchmark_disclaimer&quot;: &quot;KPI changes are controlled implementation benchmark results on synthetic data and are not real customer outcomes.&quot;
+  },
+  &quot;generated_counts&quot;: {
+    &quot;SAP_S4HANA_SIM.customers&quot;: 18,
+    &quot;SAP_S4HANA_SIM.invoices&quot;: 216,
+    &quot;SAP_S4HANA_SIM.payments&quot;: 186,
+    &quot;SAP_S4HANA_SIM.remittances&quot;: 144,
+    &quot;SAP_S4HANA_SIM.deductions&quot;: 18,
+    &quot;SAP_S4HANA_SIM.promises_to_pay&quot;: 18,
+    &quot;SAP_S4HANA_SIM.collection_activities&quot;: 36,
+    &quot;ORACLE_FUSION_SIM.customers&quot;: 18,
+    &quot;ORACLE_FUSION_SIM.invoices&quot;: 216,
+    &quot;ORACLE_FUSION_SIM.payments&quot;: 186,
+    &quot;ORACLE_FUSION_SIM.remittances&quot;: 144,
+    &quot;ORACLE_FUSION_SIM.deductions&quot;: 18,
+    &quot;ORACLE_FUSION_SIM.promises_to_pay&quot;: 18,
+    &quot;ORACLE_FUSION_SIM.collection_activities&quot;: 36,
+    &quot;NETSUITE_SIM.customers&quot;: 18,
+    &quot;NETSUITE_SIM.invoices&quot;: 216,
+    &quot;NETSUITE_SIM.payments&quot;: 186,
+    &quot;NETSUITE_SIM.remittances&quot;: 144,
+    &quot;NETSUITE_SIM.deductions&quot;: 18,
+    &quot;NETSUITE_SIM.promises_to_pay&quot;: 18,
+    &quot;NETSUITE_SIM.collection_activities&quot;: 36
+  },
+  &quot;canonical_counts&quot;: {
+    &quot;customers&quot;: 54,
+    &quot;invoices&quot;: 648,
+    &quot;payments&quot;: 558,
+    &quot;remittances&quot;: 432,
+    &quot;deductions&quot;: 54,
+    &quot;promises_to_pay&quot;: 54,
+    &quot;collection_activities&quot;: 108
+  },
+  &quot;data_quality&quot;: {
+    &quot;status&quot;: &quot;PASS&quot;,
+    &quot;total_records&quot;: 1908,
+    &quot;error_count&quot;: 0,
+    &quot;warning_count&quot;: 18,
+    &quot;quality_rate&quot;: 1.0
+  },
+  &quot;baseline_kpis&quot;: {
+    &quot;payment_records&quot;: 558,
+    &quot;valid_cash_records&quot;: 540,
+    &quot;auto_match_rate&quot;: 0.1,
+    &quot;manual_review_rate&quot;: 0.9032258064516129,
+    &quot;unapplied_cash_usd&quot;: 2192667.31,
+    &quot;ending_ar_usd&quot;: 2961501.38,
+    &quot;dso_days&quot;: 115.9,
+    &quot;cei_percent&quot;: 8.7,
+    &quot;past_due_percent&quot;: 0.6949582377030668,
+    &quot;processing_time_hours&quot;: 67.7
+  },
+  &quot;future_kpis&quot;: {
+    &quot;payment_records&quot;: 558,
+    &quot;valid_cash_records&quot;: 540,
+    &quot;auto_match_rate&quot;: 0.8074074074074075,
+    &quot;manual_review_rate&quot;: 0.21863799283154123,
+    &quot;unapplied_cash_usd&quot;: 550208.69,
+    &quot;ending_ar_usd&quot;: 1319042.76,
+    &quot;dso_days&quot;: 51.6,
+    &quot;cei_percent&quot;: 75.7,
+    &quot;past_due_percent&quot;: 0.4485933192946679,
+    &quot;processing_time_hours&quot;: 13.0
+  },
+  &quot;kpi_comparison&quot;: [
+    {
+      &quot;metric&quot;: &quot;auto_match_rate&quot;,
+      &quot;label&quot;: &quot;Auto-match rate&quot;,
+      &quot;unit&quot;: &quot;percent&quot;,
+      &quot;direction&quot;: &quot;higher&quot;,
+      &quot;baseline&quot;: 0.1,
+      &quot;future&quot;: 0.8074074074074075,
+      &quot;change&quot;: 0.7074074074074075,
+      &quot;target&quot;: 0.78,
+      &quot;target_met&quot;: true
+    },
+    {
+      &quot;metric&quot;: &quot;manual_review_rate&quot;,
+      &quot;label&quot;: &quot;Manual-review rate&quot;,
+      &quot;unit&quot;: &quot;percent&quot;,
+      &quot;direction&quot;: &quot;lower&quot;,
+      &quot;baseline&quot;: 0.9032258064516129,
+      &quot;future&quot;: 0.21863799283154123,
+      &quot;change&quot;: -0.6845878136200716,
+      &quot;target&quot;: 0.22,
+      &quot;target_met&quot;: true
+    },
+    {
+      &quot;metric&quot;: &quot;unapplied_cash_usd&quot;,
+      &quot;label&quot;: &quot;Unapplied cash&quot;,
+      &quot;unit&quot;: &quot;currency&quot;,
+      &quot;direction&quot;: &quot;lower&quot;,
+      &quot;baseline&quot;: 2192667.31,
+      &quot;future&quot;: 550208.69,
+      &quot;change&quot;: -1642458.62,
+      &quot;target&quot;: 125000,
+      &quot;target_met&quot;: false
+    },
+    {
+      &quot;metric&quot;: &quot;dso_days&quot;,
+      &quot;label&quot;: &quot;DSO&quot;,
+      &quot;unit&quot;: &quot;days&quot;,
+      &quot;direction&quot;: &quot;lower&quot;,
+      &quot;baseline&quot;: 115.9,
+      &quot;future&quot;: 51.6,
+      &quot;change&quot;: -64.30000000000001,
+      &quot;target&quot;: 48,
+      &quot;target_met&quot;: false
+    },
+    {
+      &quot;metric&quot;: &quot;cei_percent&quot;,
+      &quot;label&quot;: &quot;CEI&quot;,
+      &quot;unit&quot;: &quot;percent_points&quot;,
+      &quot;direction&quot;: &quot;higher&quot;,
+      &quot;baseline&quot;: 8.7,
+      &quot;future&quot;: 75.7,
+      &quot;change&quot;: 67.0,
+      &quot;target&quot;: 82,
+      &quot;target_met&quot;: false
+    },
+    {
+      &quot;metric&quot;: &quot;past_due_percent&quot;,
+      &quot;label&quot;: &quot;Past-due AR&quot;,
+      &quot;unit&quot;: &quot;percent&quot;,
+      &quot;direction&quot;: &quot;lower&quot;,
+      &quot;baseline&quot;: 0.6949582377030668,
+      &quot;future&quot;: 0.4485933192946679,
+      &quot;change&quot;: -0.24636491840839886,
+      &quot;target&quot;: 0.3,
+      &quot;target_met&quot;: false
+    },
+    {
+      &quot;metric&quot;: &quot;processing_time_hours&quot;,
+      &quot;label&quot;: &quot;Processing time&quot;,
+      &quot;unit&quot;: &quot;hours&quot;,
+      &quot;direction&quot;: &quot;lower&quot;,
+      &quot;baseline&quot;: 67.7,
+      &quot;future&quot;: 13.0,
+      &quot;change&quot;: -54.7,
+      &quot;target&quot;: 25,
+      &quot;target_met&quot;: true
+    }
+  ],
+  &quot;match_method_distribution&quot;: {
+    &quot;UNMATCHED&quot;: 104,
+    &quot;DEDUCTION_SUPPORTED_SHORT_PAY&quot;: 54,
+    &quot;PARTIAL_REFERENCE&quot;: 106,
+    &quot;ONE_TO_MANY_REMITTANCE&quot;: 53,
+    &quot;OVERPAYMENT_APPLY&quot;: 113,
+    &quot;REFERENCE&quot;: 106,
+    &quot;AMOUNT_INFERENCE&quot;: 4,
+    &quot;DUPLICATE_DETECTED&quot;: 18
+  },
+  &quot;exception_count&quot;: 235,
+  &quot;collection_worklist_count&quot;: 324,
+  &quot;disclaimers&quot;: [
+    &quot;All SAP S/4HANA-style, Oracle Fusion-style, and NetSuite-style files are synthetic exports created for this implementation simulation.&quot;,
+    &quot;KPI changes are controlled implementation benchmark results on synthetic data and are not real customer outcomes.&quot;
+  ],
+  &quot;agentic_control&quot;: {
+    &quot;mode&quot;: &quot;offline_deterministic&quot;,
+    &quot;decision_count&quot;: 24,
+    &quot;collection_brief&quot;: {
+      &quot;critical_accounts&quot;: 0,
+      &quot;broken_promises&quot;: 54,
+      &quot;highest_priority_action&quot;: &quot;Call broken-promise accounts first, then work descending configured score.&quot;
+    },
+    &quot;go_live&quot;: {
+      &quot;recommendation&quot;: &quot;CONDITIONAL_GO&quot;,
+      &quot;unmet_targets&quot;: [
+        &quot;Unapplied cash&quot;,
+        &quot;DSO&quot;,
+        &quot;CEI&quot;,
+        &quot;Past-due AR&quot;
+      ],
+      &quot;conditions&quot;: [
+        &quot;Retain human approval for all ERP posting, write-off, refund, and master-data actions.&quot;,
+        &quot;Operate a hypercare queue for unapplied cash and residual overpayments.&quot;
+      ]
+    }
+  },
+  &quot;observability&quot;: {
+    &quot;span_count&quot;: 80,
+    &quot;error_span_count&quot;: 0,
+    &quot;agent_span_count&quot;: 50,
+    &quot;mean_duration_ms&quot;: 0.294,
+    &quot;p95_duration_ms&quot;: 1.022,
+    &quot;trace_file&quot;: &quot;output/telemetry/traces.jsonl&quot;,
+    &quot;content_capture_enabled&quot;: false
+  }
+}</pre></details></main></body></html>
