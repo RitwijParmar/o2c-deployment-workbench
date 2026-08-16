@@ -1,0 +1,8 @@
+metric,label,unit,direction,baseline,future,change,target,target_met
+auto_match_rate,Auto-match rate,percent,higher,0.1,0.8074074074074075,0.7074074074074075,0.78,True
+manual_review_rate,Manual-review rate,percent,lower,0.9032258064516129,0.21863799283154123,-0.6845878136200716,0.22,True
+unapplied_cash_usd,Unapplied cash,currency,lower,2192667.31,550208.69,-1642458.62,125000,False
+dso_days,DSO,days,lower,115.9,51.6,-64.30000000000001,48,False
+cei_percent,CEI,percent_points,higher,8.7,75.7,67.0,82,False
+past_due_percent,Past-due AR,percent,lower,0.6949582377030668,0.4485933192946679,-0.24636491840839886,0.3,False
+processing_time_hours,Processing time,hours,lower,67.7,13.0,-54.7,25,True
